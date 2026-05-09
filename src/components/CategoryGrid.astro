@@ -119,52 +119,65 @@ const icons: Record<
   aria-labelledby="categories-title"
 >
   <div class="container">
-    <div class="section-heading">
-      <p class="section-kicker">Categorías principales</p>
 
-      <h2 class="section-title" id="categories-title">
+    <div class="section-heading">
+      <p class="section-kicker">
+        Categorías principales
+      </p>
+
+      <h2
+        class="section-title"
+        id="categories-title"
+      >
         Explora poemas cristianos por tema
       </h2>
     </div>
-  </div>
 
-  <div
-    class="category-carousel-shell"
-    aria-label="Categorías destacadas de poemas cristianos"
-  >
-    <div class="category-carousel" data-category-carousel tabindex="0">
-      <div class="category-track" data-category-track>
+    <div class="category-grid">
 
-        {categories.map((category) => {
-          const icon = icons[category.icon];
+      {categories.map((category) => {
+        const icon = icons[category.icon];
 
-          return (
-            <a
-              href={category.href}             
-              class:list={['category-card',`tone-${category.tone}`,!category.available && 'disabled-card']}
+        return (
+          <a
+            href={category.href}
+            class:list={[
+              'category-card',
+              `tone-${category.tone}`,
+              !category.available && 'disabled-card'
+            ]}
+          >
+            <span class="category-count">
+              {category.count}
+            </span>
+
+            <span
+              class="category-icon"
+              aria-hidden="true"
             >
-              <span class="category-count">{category.count}</span>
+              <svg
+                viewBox={icon.viewBox}
+                focusable="false"
+              >
+                {icon.paths.map((path: string) => (
+                  <path d={path} />
+                ))}
+              </svg>
+            </span>
 
-              <span class="category-icon" aria-hidden="true">
-                <svg viewBox={icon.viewBox} focusable="false">
-                  {icon.paths.map((path: string) => (
-                    <path d={path} />
-                  ))}
-                </svg>
-              </span>
+            <h3>
+              {category.title}
+            </h3>
 
-              <h3>{category.title}</h3>
+            <p>
+              {category.description}
+            </p>
+          </a>
+        );
+      })}
 
-              <p>{category.description}</p>
-            </a>
-          );
-        })}
-
-      </div>
     </div>
-  </div>
 
-  <div class="container">
     <section
       class="category-seo-panel"
       aria-labelledby="category-seo-title"
@@ -187,40 +200,6 @@ const icons: Record<
 
       </nav>
     </section>
+
   </div>
 </section>
-
-<script is:inline>
-  const slider = document.querySelector('[data-category-carousel]');
-
-  if (slider) {
-    let isDragging = false;
-    let startX = 0;
-    let startScroll = 0;
-
-    slider.addEventListener('mousedown', (e) => {
-      isDragging = true;
-
-      slider.classList.add('dragging');
-
-      startX = e.clientX;
-      startScroll = slider.scrollLeft;
-    });
-
-    window.addEventListener('mouseup', () => {
-      isDragging = false;
-
-      slider.classList.remove('dragging');
-    });
-
-    slider.addEventListener('mousemove', (e) => {
-      if (!isDragging) return;
-
-      e.preventDefault();
-
-      const distance = e.clientX - startX;
-
-      slider.scrollLeft = startScroll - distance;
-    });
-  }
-</script>
