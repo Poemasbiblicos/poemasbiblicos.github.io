@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import Hero from "../components/Hero.astro";
+import CategoryGrid from "../components/CategoryGrid.astro";
+import FeaturedArticles from "../components/FeaturedArticles.astro";
+
+const pageTitle =
+  "Poemas Bíblicos | Poemas cristianos para reflexionar";
+
+const pageDescription =
+  "Poemas bíblicos y cristianos llenos de fe, amor y esperanza para inspirar el alma y acercar el corazón a Dios.";
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <Hero />
+
+  <CategoryGrid />
+
+  <FeaturedArticles />
+</BaseLayout>

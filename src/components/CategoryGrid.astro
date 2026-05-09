@@ -1,0 +1,226 @@
+---
+const categories = [
+  {
+    title: 'Biblical Poems for Mother’s Day',
+    description: 'Christian verses for honoring mothers with love and faith.',
+    href: '/poemas/biblical_mothers_day_poems',
+    count: '15+ poemas',
+    tone: 'rose',
+    icon: 'mother',
+    available: true,
+  },
+  {
+    title: 'Poemas Cristianos para la Madre',
+    description: 'Poemas bíblicos y cristianos para madres.',
+    href: '/poemas/poemas_madre_cristiana',
+    count: '20+ poemas',
+    tone: 'gold',
+    icon: 'mother',
+    available: true,
+  },
+  {
+    title: 'Poemas Cristianos para la Mujer',
+    description: 'Poemas bíblicos dedicados a la mujer cristiana.',
+    href: '/poemas/poemas-biblicos-mujer',
+    count: '35+ poemas',
+    tone: 'blush',
+    icon: 'heart',
+    available: true,
+  },
+  {
+  title: 'Poemas Cristianos Cortos',
+  description: 'Reflexiones breves llenas de fe y esperanza.',
+  href: '#',
+  count: '50+ poemas',
+  tone: 'rose',
+  icon: 'dove',
+  available: false,
+},
+
+{
+  title: 'Poemas Bíblicos de Amor',
+  description: 'Versos cristianos inspirados en el amor de Dios.',
+  href: '#',
+  count: '30+ poemas',
+  tone: 'gold',
+  icon: 'heart-fill',
+  available: false,
+},
+
+{
+  title: 'Poemas Cristianos para Jóvenes',
+  description: 'Poemas para fortalecer la fe de adolescentes y jóvenes.',
+  href: '#',
+  count: '20+ poemas',
+  tone: 'blush',
+  icon: 'dove',
+  available: false,
+},
+];
+
+const seoLinks = [
+  {
+    label: 'Biblical Poems For Mothers Day',
+    href: '/poemas/biblical_mothers_day_poems',
+  },
+  {
+    label: 'Poemas Cristianos para la Madre',
+    href: '/poemas/poemas_madre_cristiana',
+  },
+  {
+    label: 'Poemas Cristianos para la Mujer',
+    href: '/poemas/poemas-biblicos-mujer',
+  },
+];
+
+const icons: Record<
+  string,
+  {
+    viewBox: string;
+    paths: string[];
+  }
+> = {
+  mother: {
+    viewBox: '0 0 28 28',
+    paths: [
+      'M14 15.7c-4.3 0-8 3.1-8.8 7.2h17.6c-.8-4.1-4.5-7.2-8.8-7.2Z',
+      'M9.6 9.7a4.4 4.4 0 1 0 8.8 0 4.4 4.4 0 0 0-8.8 0Z',
+      'M6.9 13.1c-2-5.5 1.8-10 7.1-10s9.1 4.5 7.1 10',
+    ],
+  },
+
+  heart: {
+    viewBox: '0 0 28 28',
+    paths: [
+      'M14 23.2S4.8 17.9 4.8 10.9A5 5 0 0 1 14 8.2a5 5 0 0 1 9.2 2.7c0 7-9.2 12.3-9.2 12.3Z',
+    ],
+  },
+
+  dove: {
+    viewBox: '0 0 28 28',
+    paths: [
+      'M23.9 6.8c-5.5.5-8.6 3-10.2 7.8-1.5-1.9-3.5-3.1-6.4-3.5 1.2 3.2 3.2 5.2 6.3 6.2-1.6 1.7-3.8 2.8-6.7 3.3 6.4 2.3 12.9-.2 15.2-6.6',
+      'M17.1 9.3c.6 2.1 1.9 3.4 4 4.1',
+    ],
+  },
+
+  'heart-fill': {
+    viewBox: '0 0 28 28',
+    paths: [
+      'M14 23.2S4.6 18 4.6 10.7A5.3 5.3 0 0 1 14 7.5a5.3 5.3 0 0 1 9.4 3.2c0 7.3-9.4 12.5-9.4 12.5Z',
+    ],
+  },
+};
+---
+
+<section
+  class="section categories-section"
+  id="categorias"
+  aria-labelledby="categories-title"
+>
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-kicker">Categorías principales</p>
+
+      <h2 class="section-title" id="categories-title">
+        Explora poemas cristianos por tema
+      </h2>
+    </div>
+  </div>
+
+  <div
+    class="category-carousel-shell"
+    aria-label="Categorías destacadas de poemas cristianos"
+  >
+    <div class="category-carousel" data-category-carousel tabindex="0">
+      <div class="category-track" data-category-track>
+
+        {categories.map((category) => {
+          const icon = icons[category.icon];
+
+          return (
+            <a
+              href={category.href}             
+              class:list={['category-card',`tone-${category.tone}`,!category.available && 'disabled-card']}
+            >
+              <span class="category-count">{category.count}</span>
+
+              <span class="category-icon" aria-hidden="true">
+                <svg viewBox={icon.viewBox} focusable="false">
+                  {icon.paths.map((path: string) => (
+                    <path d={path} />
+                  ))}
+                </svg>
+              </span>
+
+              <h3>{category.title}</h3>
+
+              <p>{category.description}</p>
+            </a>
+          );
+        })}
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <section
+      class="category-seo-panel"
+      aria-labelledby="category-seo-title"
+    >
+      <nav aria-label="Categorías de poemas cristianos y bíblicos">
+
+        <h2 id="category-seo-title">
+          Categorías de poemas cristianos y bíblicos
+        </h2>
+
+        <ul>
+          {seoLinks.map((link) => (
+            <li>
+              <a href={link.href}>
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+      </nav>
+    </section>
+  </div>
+</section>
+
+<script is:inline>
+  const slider = document.querySelector('[data-category-carousel]');
+
+  if (slider) {
+    let isDragging = false;
+    let startX = 0;
+    let startScroll = 0;
+
+    slider.addEventListener('mousedown', (e) => {
+      isDragging = true;
+
+      slider.classList.add('dragging');
+
+      startX = e.clientX;
+      startScroll = slider.scrollLeft;
+    });
+
+    window.addEventListener('mouseup', () => {
+      isDragging = false;
+
+      slider.classList.remove('dragging');
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+
+      e.preventDefault();
+
+      const distance = e.clientX - startX;
+
+      slider.scrollLeft = startScroll - distance;
+    });
+  }
+</script>

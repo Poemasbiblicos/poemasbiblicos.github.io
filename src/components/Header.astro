@@ -1,0 +1,38 @@
+---
+const navItems = [
+  { label: 'Inicio', href: '/', active: true },
+  { label: 'Categorías', href: '#categorias' },
+  { label: 'Destacados', href: '#destacados' },
+  { label: 'Acerca de', href: '#acerca' },
+];
+---
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/" aria-label="Poemas Bíblicos, inicio">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 44" focusable="false">
+          <path d="M7 8.5c8.8-4.4 17.2-4.2 25 0v29.8c-7.8-4.3-16.2-4.4-25-.2V8.5Z" />
+          <path d="M57 8.5c-8.8-4.4-17.2-4.2-25 0v29.8c7.8-4.3 16.2-4.4 25-.2V8.5Z" />
+          <path d="M32 8.5v29.8" />
+        </svg>
+      </span>
+      <span class="brand-copy">
+        <strong>Poemas Bíblicos</strong>
+        <small>Palabras que inspiran tu alma</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      {navItems.map((item) => (
+        <a
+          class:list={['nav-link', { 'is-active': item.active }]}
+          href={item.href}
+          aria-current={item.active ? 'page' : undefined}
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>

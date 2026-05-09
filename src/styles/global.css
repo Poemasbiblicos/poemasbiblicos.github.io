@@ -1,0 +1,1131 @@
+:root {
+  color-scheme: light;
+  --bg: #fffdf9;
+  --surface: #ffffff;
+  --surface-warm: #fbf5ec;
+  --ink: #17130f;
+  --muted: #615b52;
+  --soft: #8a8074;
+  --line: #eadfce;
+  --gold: #b87d00;
+  --gold-dark: #8b5f00;
+  --gold-soft: #f7ead3;
+  --shadow-soft: 0 34px 90px rgba(42, 31, 17, 0.18);
+  --shadow-card: 0 22px 54px rgba(42, 31, 17, 0.09);
+  --radius: 8px;
+  --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --sans: 'Manrope', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 253, 249, 0.94), rgba(255, 253, 249, 0.98)),
+    radial-gradient(circle at 18% 8%, rgba(184, 125, 0, 0.11), transparent 28%),
+    var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+body::selection {
+  background: var(--gold-soft);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
+  display: block;
+}
+
+.container {
+  width: min(1120px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.site-header {
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 253, 249, 0.82);
+  border-bottom: 1px solid rgba(234, 223, 206, 0.8);
+  backdrop-filter: blur(14px);
+}
+
+.header-inner {
+  width: min(1220px, calc(100% - 40px));
+  min-height: 88px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 34px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 13px;
+}
+
+.brand-mark {
+  width: 56px;
+  color: #cab08b;
+}
+
+.brand-mark svg {
+  width: 100%;
+  height: auto;
+}
+
+.brand-mark path,
+.category-icon path,
+.article-meta path,
+.article-meta circle {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.brand-copy strong {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 0.95;
+}
+
+.brand-copy small {
+  display: block;
+  margin-top: 5px;
+  color: var(--soft);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(20px, 4vw, 44px);
+}
+
+.nav-link {
+  position: relative;
+  padding: 10px 0;
+  color: #2c2721;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  height: 2px;
+  background: var(--gold);
+  opacity: 0;
+  transform: scaleX(0.35);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.nav-link:hover,
+.nav-link.is-active {
+  color: var(--gold-dark);
+}
+
+.nav-link:hover::after,
+.nav-link.is-active::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, #fffdf9 0%, #fff9f2 46%, #f5eadc 100%);
+  border-bottom: 1px solid rgba(234, 223, 206, 0.74);
+}
+
+.hero-canvas {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255, 253, 249, 0.98) 0%, rgba(255, 253, 249, 0.94) 31%, rgba(255, 253, 249, 0.5) 51%, rgba(255, 253, 249, 0.08) 100%),
+    linear-gradient(180deg, rgba(255, 253, 249, 0.08), rgba(31, 24, 16, 0.18)),
+    url('/images/hero-poemas-biblicos.jpg') center / cover no-repeat;
+  transform: scale(1.01);
+}
+
+.hero-inner {
+  width: min(1140px, calc(100% - 32px));
+  position: relative;
+  z-index: 1;
+  min-height: 500px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  padding: 70px 0 78px;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 620px;
+}
+
+.hero-kicker,
+.section-kicker,
+.featured-label {
+  margin: 0;
+  color: var(--gold-dark);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 14px 0 22px;
+  font-family: var(--serif);
+  font-size: clamp(3.55rem, 6.2vw, 5rem);
+  font-weight: 700;
+  line-height: 0.94;
+  max-width: 610px;
+}
+
+.hero-copy > p:not(.hero-kicker) {
+  max-width: 520px;
+  margin: 0 0 30px;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.62;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.hero-actions span {
+  max-width: 220px;
+  color: var(--soft);
+  font-family: var(--serif);
+  font-size: 1.18rem;
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #c89012 0%, #a97400 100%);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 12px 22px rgba(169, 116, 0, 0.18);
+}
+
+.button-primary:hover {
+  background: linear-gradient(180deg, #d39b1a 0%, #936600 100%);
+}
+
+.section {
+  padding: 92px 0;
+}
+
+.categories-section {
+  background: var(--surface);
+}
+
+.featured-section {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 249, 0.94) 0%, rgba(251, 245, 236, 0.98) 100%),
+    radial-gradient(circle at 12% 8%, rgba(184, 125, 0, 0.12), transparent 24rem);
+  border-top: 1px solid rgba(234, 223, 206, 0.62);
+}
+
+.section-heading {
+  max-width: 650px;
+  margin: 0 auto 44px;
+  text-align: center;
+}
+
+.section-title {
+  margin: 8px 0 0;
+  font-family: var(--serif);
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 42px;
+  height: 2px;
+  margin: 15px auto 0;
+  background: var(--gold);
+}
+
+.category-carousel-shell {
+  width: min(1280px, 100%);
+  margin-inline: auto;
+  overflow: hidden;
+}
+.category-carousel {
+  cursor: grab;
+}
+
+.category-carousel.dragging {
+  cursor: grabbing;
+}
+
+.category-carousel {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  cursor: grab;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.category-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.category-carousel:active,
+.category-carousel.is-dragging {
+  cursor: grabbing;
+}
+
+.category-carousel:focus-visible {
+  outline: 2px solid rgba(184, 125, 0, 0.45);
+  outline-offset: -4px;
+}
+
+.category-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.category-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  padding-inline: 24px;
+}
+
+.category-card {
+  position: relative;
+  min-height: 292px;
+  display: grid;
+  align-content: space-between;
+  gap: 18px;
+  padding: 32px;
+  border: 1px solid rgba(64, 45, 22, 0.09);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  flex: 0 0 clamp(310px, 29vw, 368px);
+  scroll-snap-align: none;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.category-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-top: 3px solid currentColor;
+  opacity: 0.32;
+}
+
+.category-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(184, 125, 0, 0.25);
+  box-shadow: 0 30px 70px rgba(42, 31, 17, 0.13);
+}
+
+.category-count {
+  color: var(--soft);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.category-icon {
+  width: 44px;
+  min-height: 44px;
+  display: grid;
+  place-items: center;
+  color: var(--gold);
+}
+
+.category-icon svg {
+  width: 44px;
+  height: auto;
+}
+
+.category-card h3 {
+  max-width: 250px;
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 2.08rem;
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+.category-card h3 a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+
+.category-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.category-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.tone-gold {
+  background: linear-gradient(135deg, #fff9ed 0%, #f5ead7 100%);
+}
+
+.tone-blush {
+  background: linear-gradient(135deg, #fff8f8 0%, #f5e5e7 100%);
+}
+
+.tone-rose {
+  background: linear-gradient(135deg, #fff7f1 0%, #f2e4da 100%);
+}
+
+.tone-sky {
+  background: linear-gradient(135deg, #f8fcff 0%, #e7f1f6 100%);
+}
+
+.tone-sage {
+  background: linear-gradient(135deg, #fbfff8 0%, #e8f1df 100%);
+}
+
+.tone-blush .category-icon {
+  color: #c65d78;
+}
+
+.tone-rose .category-icon {
+  color: #a67657;
+}
+
+.tone-sky .category-icon {
+  color: #5c94bd;
+}
+
+.tone-sage .category-icon {
+  color: #7f9d5c;
+}
+
+.tone-gold .category-icon path:last-child {
+  fill: currentColor;
+  stroke-width: 0;
+}
+
+.category-seo-panel {
+  margin-top: 34px;
+  padding: 30px;
+  border: 1px solid rgba(234, 223, 206, 0.86);
+  border-radius: var(--radius);
+  background: rgba(255, 253, 249, 0.72);
+}
+
+.category-seo-panel h2 {
+  margin: 0 0 18px;
+  font-family: var(--serif);
+  font-size: clamp(1.58rem, 3vw, 2rem);
+  line-height: 1.08;
+}
+
+.category-seo-panel ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.category-seo-panel a {
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.category-seo-panel a:hover {
+  color: var(--gold-dark);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* =========================================
+   FEATURED ARTICLES
+========================================= */
+
+.featured-section {
+  padding: 120px 24px;
+}
+
+.featured-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 32px;
+
+  margin-top: 56px;
+}
+
+.featured-card-link {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+.featured-card {
+  background: white;
+
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  height: 100%;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+
+  border: 1px solid rgba(0,0,0,0.04);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.04);
+}
+
+.featured-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 25px 50px rgba(0,0,0,0.12);
+}
+
+.featured-image {
+  aspect-ratio: 16 / 10;
+
+  overflow: hidden;
+}
+
+.featured-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition:
+    transform 0.6s ease;
+}
+
+.featured-card:hover img {
+  transform: scale(1.06);
+}
+
+.featured-body {
+  padding: 32px;
+}
+
+.featured-label {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  padding:
+    8px 14px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(184,138,47,0.12);
+
+  color: #b88a2f;
+
+  font-size: 0.8rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+.featured-body h3 {
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size: 2rem;
+
+  line-height: 1.1;
+
+  margin-bottom: 18px;
+
+  color: #1f1f1f;
+}
+
+.featured-body p {
+  color: #5f5f5f;
+
+  line-height: 1.8;
+
+  margin-bottom: 28px;
+}
+
+.article-meta {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 16px;
+
+  padding-top: 18px;
+
+  border-top:
+    1px solid rgba(0,0,0,0.06);
+
+  font-size: 0.9rem;
+
+  color: #7a7a7a;
+}
+
+@media (max-width: 768px) {
+  .featured-section {
+    padding: 80px 18px;
+  }
+
+  .featured-body {
+    padding: 24px;
+  }
+
+  .featured-body h3 {
+    font-size: 1.8rem;
+  }
+}
+
+.image-flower img {
+  object-position: 22% 52%;
+}
+
+.image-love img {
+  object-position: 56% 52%;
+}
+
+.image-faith img {
+  object-position: 82% 52%;
+}
+
+
+.article-meta {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid rgba(234, 223, 206, 0.78);
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  color: var(--soft);
+  font-size: 0.9rem;
+}
+
+.article-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.article-meta svg {
+  width: 15px;
+  height: auto;
+}
+
+.site-footer {
+  background: #17130f;
+  color: #fff9ef;
+}
+
+.footer-inner {
+  min-height: 132px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.footer-inner strong {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.footer-inner p {
+  margin: 6px 0 0;
+  color: rgba(255, 249, 239, 0.72);
+}
+
+.footer-note {
+  white-space: nowrap;
+}
+
+@media (max-width: 920px) {
+  .header-inner {
+    min-height: auto;
+    padding: 18px 0;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .main-nav {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 24px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .hero-inner {
+    min-height: 0;
+    padding: 62px 0 68px;
+  }
+
+  .hero-canvas {
+    background:
+      linear-gradient(90deg, rgba(255, 253, 249, 0.98) 0%, rgba(255, 253, 249, 0.9) 54%, rgba(255, 253, 249, 0.5) 100%),
+      linear-gradient(180deg, rgba(255, 253, 249, 0.08), rgba(31, 24, 16, 0.12)),
+      url('/images/hero-poemas-biblicos.jpg') 62% center / cover no-repeat;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.1rem, 9vw, 4.6rem);
+  }
+
+  .hero-copy {
+    max-width: 670px;
+  }
+
+  .featured-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .category-card {
+    flex-basis: clamp(300px, 43vw, 350px);
+  }
+
+  .category-seo-panel ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .container,
+  .hero-inner,
+  .header-inner {
+    width: min(100% - 24px, 1120px);
+  }
+
+  .brand-mark {
+    width: 46px;
+  }
+
+  .brand-copy strong {
+    font-size: 1.32rem;
+  }
+
+  .main-nav {
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 0.96rem;
+  }
+
+  .hero-inner {
+    padding: 46px 0 54px;
+  }
+
+  .hero h1 {
+    font-size: 3.55rem;
+    line-height: 0.92;
+  }
+
+  .hero-copy > p:not(.hero-kicker) {
+    font-size: 1.04rem;
+  }
+
+  .hero-canvas {
+    background:
+      linear-gradient(180deg, rgba(255, 253, 249, 0.98) 0%, rgba(255, 253, 249, 0.91) 55%, rgba(255, 253, 249, 0.58) 100%),
+      url('/images/hero-poemas-biblicos.jpg') 66% center / cover no-repeat;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 26px;
+  }
+
+  .section-title {
+    font-size: 2.42rem;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .category-carousel {
+    padding-inline: 12px;
+    scroll-padding-inline: 12px;
+    mask-image: linear-gradient(90deg, transparent 0%, #000 4%, #000 96%, transparent 100%);
+  }
+
+  .category-track {
+    gap: 18px;
+  }
+
+  .category-card {
+    flex-basis: min(84vw, 318px);
+    min-height: 270px;
+    padding: 26px;
+  }
+
+  .category-card h3 {
+    font-size: 1.82rem;
+  }
+
+  .category-seo-panel {
+    margin-top: 24px;
+    padding: 24px;
+  }
+
+  .category-seo-panel ul {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-body {
+    min-height: 250px;
+    padding: 24px;
+  }
+
+  .featured-body h3 {
+    font-size: 1.52rem;
+  }
+
+  .article-meta,
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-inner {
+    justify-content: center;
+    min-height: 150px;
+  }
+}
+
+/* =========================================
+   POEMA PAGE
+========================================= */
+
+.poema-page {
+  padding: 80px 24px;
+  background: #f8f6f2;
+}
+
+.poema-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.poema-header {
+  margin-bottom: 64px;
+}
+
+.poema-category {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: #b88a2f;
+}
+
+.poema-title {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(3rem, 6vw, 5rem);
+
+  line-height: 0.95;
+
+  font-weight: 700;
+
+  color: #1d1d1d;
+
+  margin-bottom: 24px;
+}
+
+.poema-description {
+  font-size: 1.15rem;
+
+  line-height: 1.8;
+
+  color: #5f5f5f;
+
+  max-width: 720px;
+
+  margin-bottom: 40px;
+}
+
+.poema-image {
+  width: 100%;
+
+  border-radius: 28px;
+
+  display: block;
+
+  object-fit: cover;
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.08);
+}
+
+/* =========================================
+   MARKDOWN CONTENT
+========================================= */
+
+.poema-content {
+  background: white;
+
+  padding: 56px;
+
+  border-radius: 32px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.04);
+}
+
+.poema-content h1,
+.poema-content h2,
+.poema-content h3 {
+  font-family: "Cormorant Garamond", serif;
+
+  color: #1c1c1c;
+
+  line-height: 1.1;
+
+  margin-top: 56px;
+  margin-bottom: 24px;
+}
+
+.poema-content h1 {
+  font-size: 3rem;
+}
+
+.poema-content h2 {
+  font-size: 2.3rem;
+}
+
+.poema-content h3 {
+  font-size: 1.8rem;
+}
+
+.poema-content p {
+  font-size: 1.15rem;
+
+  line-height: 2;
+
+  color: #444;
+
+  margin-bottom: 28px;
+}
+
+.poema-content em {
+  color: #7a6a52;
+}
+
+.poema-content strong {
+  color: #1f1f1f;
+}
+
+.poema-content hr {
+  border: none;
+
+  border-top: 1px solid #e7dfd2;
+
+  margin: 56px 0;
+}
+
+.poema-content blockquote {
+  margin: 40px 0;
+
+  padding: 24px 32px;
+
+  border-left: 4px solid #b88a2f;
+
+  background: #faf7f1;
+
+  border-radius: 16px;
+
+  font-style: italic;
+}
+
+.poema-content ul,
+.poema-content ol {
+  padding-left: 24px;
+
+  margin-bottom: 32px;
+}
+
+.poema-content li {
+  margin-bottom: 12px;
+
+  line-height: 1.8;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .poema-page {
+    padding: 48px 18px;
+  }
+
+  .poema-content {
+    padding: 32px 24px;
+  }
+
+  .poema-title {
+    font-size: 3rem;
+  }
+
+  .poema-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .poema-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .poema-content p {
+    font-size: 1rem;
+  }
+}
+/* ===== CATEGORY CAROUSEL FIX ===== */
+
+.category-carousel {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: none;
+
+  cursor: grab;
+}
+
+.category-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.category-track {
+  display: flex !important;
+
+  gap: 24px;
+
+  width: max-content;
+
+  padding: 12px 24px 24px;
+}
+
+.category-card {
+  flex: 0 0 340px;
+}
+
+@media (max-width: 768px) {
+  .category-card {
+    flex: 0 0 84vw;
+  }
+}
+.category-carousel.dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+/* ===== DRAG FIX ===== */
+
+.category-carousel {
+  cursor: grab;
+}
+
+.category-carousel.dragging {
+  cursor: grabbing;
+}
+
+.category-carousel.dragging * {
+  user-select: none;
+  pointer-events: none;
+}
+
+.category-card img {
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none;
+}

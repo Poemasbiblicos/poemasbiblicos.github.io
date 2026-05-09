@@ -1,0 +1,56 @@
+---
+import { getCollection, render } from "astro:content";
+
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+  const poemas = await getCollection("poemas");
+
+  return poemas.map((poema) => ({
+    params: {
+      slug: poema.id,
+    },
+    props: {
+      poema,
+    },
+  }));
+}
+
+const { poema } = Astro.props;
+
+const { Content } = await render(poema);
+---
+
+<BaseLayout
+  title={poema.data.title}
+  description={poema.data.description}
+  image={poema.data.heroImage}
+>
+  <article class="poema-page">
+    <div class="poema-container">
+      <header class="poema-header">
+        <span class="poema-category">
+          {poema.data.category}
+        </span>
+
+        <h1 class="poema-title">
+          {poema.data.title}
+        </h1>
+
+        <p class="poema-description">
+          {poema.data.description}
+        </p>
+
+        <img
+          class="poema-image"
+          src={poema.data.heroImage}
+          alt={poema.data.title}
+        />
+      </header>
+
+      <section class="poema-content">
+        <Content />
+      </section>
+    </div>
+  </article>
+</BaseLayout>

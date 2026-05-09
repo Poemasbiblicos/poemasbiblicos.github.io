@@ -1,0 +1,83 @@
+---
+import { getCollection } from 'astro:content';
+
+const poemas = await getCollection('poemas');
+
+const featuredPoemas = poemas
+  .filter((poema) => poema.data.featured)
+  .slice(0, 3);
+---
+
+<section
+  class="section featured-section"
+  id="destacados"
+  aria-labelledby="featured-title"
+>
+  <div class="container">
+
+    <div class="section-heading">
+      <p class="section-kicker">
+        Lecturas recomendadas
+      </p>
+
+      <h2
+        class="section-title"
+        id="featured-title"
+      >
+        Poemas destacados
+      </h2>
+    </div>
+
+    <div class="featured-grid">
+
+      {featuredPoemas.map((poema) => (
+        <a
+          href={`/poemas/${poema.id}`}
+          class="featured-card-link"
+        >
+          <article class="featured-card">
+
+            <div class="featured-image">
+              <img
+                src={poema.data.heroImage}
+                alt={poema.data.title}
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="featured-body">
+
+              <span class="featured-label">
+                Destacado
+              </span>
+
+              <h3>
+                {poema.data.title}
+              </h3>
+
+              <p>
+                {poema.data.description}
+              </p>
+
+              <footer class="article-meta">
+
+                <span>
+                  {poema.data.category}
+                </span>
+
+                <span>
+                  {poema.data.tags?.[0]}
+                </span>
+
+              </footer>
+
+            </div>
+
+          </article>
+        </a>
+      ))}
+
+    </div>
+  </div>
+</section>
