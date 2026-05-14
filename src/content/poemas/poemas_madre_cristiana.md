@@ -1,7 +1,7 @@
 ---
 title: "Poemas Cristianos para la Madre"
 description: "Poemas bíblicos y cristianos para madres."
-category: "madre"
+category: "poemas para la madre"
 tags:
   - poemas cristianos
   - poemas bíblicos

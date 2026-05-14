@@ -1,0 +1,102 @@
+---
+import { getCollection } from "astro:content";
+
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+  const poemas = await getCollection("poemas");
+
+  const categories = [
+    ...new Set(
+      poemas.map((poema) => poema.data.category)
+    ),
+  ];
+
+  return categories.map((category) => ({
+    params: {
+      category: category
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .replace(/\s+/g, "-")
+    },
+
+    props: {
+      category,
+      poemas: poemas.filter(
+        (poema) =>
+          poema.data.category === category
+      ),
+    },
+  }));
+}
+
+const { category, poemas } = Astro.props;
+
+const pageTitle = `${category} | Poemas Bíblicos`;
+
+const pageDescription =
+  `Explora ${category.toLowerCase()} llenos de fe, esperanza y reflexión cristiana.`;
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="section-heading">
+        <p class="section-kicker">
+          Categoría
+        </p>
+
+        <h1 class="section-title">
+          {category}
+        </h1>
+
+        <p class="section-description">
+          {pageDescription}
+        </p>
+      </div>
+
+        <div class="category-poems-list">
+
+           {poemas.map((poema) => (
+          <a
+              href={`/poemas/${poema.id}`}
+           class="poem-preview-card"
+            >
+             <img
+            src={poema.data.heroImage}
+           alt={poema.data.title}
+           loading="lazy"
+             decoding="async"
+            />
+
+              <div class="poem-preview-content">
+
+                <span class="poem-category-tag">
+                {poema.data.category}
+                </span>
+
+                 <h2>
+                    {poema.data.title}
+                   </h2>
+
+                     <p>
+                       {poema.data.description}
+                     </p>
+
+               </div>
+          </a>
+          ))}
+
+        </div>
+
+    </div>
+  </section>
+  
+
+</BaseLayout>
