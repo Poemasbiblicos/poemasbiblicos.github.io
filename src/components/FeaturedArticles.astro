@@ -32,7 +32,7 @@ const featuredPoemas = poemas
 
       {featuredPoemas.map((poema) => (
         <a
-          href={`/poemas/${poema.id}`}
+          href={`/poemas/${poema.id.split("/").pop()}`}
           class="featured-card-link"
         >
           <article class="featured-card">

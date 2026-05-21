@@ -17,7 +17,7 @@ featured: true
 
 pubDate: "2026-05-14T00:00:00Z"
 
-heroImage: "/images/fe.jpg"
+heroImage: "/images/fortaleza.jpg"
 ---
 # Poemas de Fe
 

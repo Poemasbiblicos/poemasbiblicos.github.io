@@ -17,7 +17,7 @@ featured: true
 
 pubDate: "2026-05-14T00:00:00Z"
 
-heroImage: "/images/reflexion.jpg"
+heroImage: "/images/fortaleza.jpg"
 ---
 # El Barro y la Mano
 

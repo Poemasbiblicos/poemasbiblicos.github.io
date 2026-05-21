@@ -9,7 +9,7 @@ export async function getStaticPaths() {
 
   return poemas.map((poema) => ({
     params: {
-      slug: poema.id,
+      slug: poema.id.split("/").pop(),
     },
     props: {
       poema,
@@ -20,6 +20,11 @@ export async function getStaticPaths() {
 const { poema } = Astro.props;
 
 const { Content } = await render(poema);
+const categorySlug = poema.data.category
+  .normalize("NFD")
+  .replace(/[\u0300-\u036f]/g, "")
+  .toLowerCase()
+  .replace(/\s+/g, "-");
 ---
 
 <BaseLayout
@@ -29,6 +34,19 @@ const { Content } = await render(poema);
 >
   <article class="poema-page">
     <div class="poema-container">
+        <nav class="poema-breadcrumb">
+
+          <a href="/">
+            Inicio
+          </a>
+
+          <span>›</span>
+
+            <a href={`/poemas/${categorySlug}/`}>
+             {poema.data.category}
+            </a>
+
+        </nav>
       <header class="poema-header">
         <span class="poema-category">
           {poema.data.category}

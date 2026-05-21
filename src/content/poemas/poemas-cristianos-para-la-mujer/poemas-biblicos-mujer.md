@@ -1,7 +1,7 @@
 ---
 title: "Poemas Cristianos para la Mujer"
 description: "Poemas bíblicos dedicados a la mujer cristiana."
-category: "mujer"
+category: "Poemas Cristianos para la Mujer"
 tags:
   - mujer cristiana
   - poemas bíblicos

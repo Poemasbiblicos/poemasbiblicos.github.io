@@ -1,7 +1,7 @@
 ---
 title: "Tres Cantos para Tener Esperanza"
 description: "Poema cristiano de esperanza inspirado en la fe, la perseverancia y las promesas de Dios."
-category: "Poemas Cristianos Esperanza"
+category: "Poemas Cristianos de Esperanza"
 tags:
   - esperanza
   - fe
@@ -9,7 +9,7 @@ tags:
   - poemas cristianos
 featured: false
 pubDate: "2026-05-14T00:00:00Z"
-heroImage: "/images/esperanza.jpg"
+heroImage: "/images/fortaleza.jpg"
 ---
 
 # Tres cantos para tener esperanza

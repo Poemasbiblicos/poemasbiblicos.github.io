@@ -58,12 +58,19 @@ svg {
 }
 
 .site-header {
-  position: relative;
-  z-index: 10;
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
   background: rgba(255, 253, 249, 0.82);
+
   border-bottom: 1px solid rgba(234, 223, 206, 0.8);
+
   backdrop-filter: blur(14px);
 }
+
 
 .header-inner {
   width: min(1220px, calc(100% - 40px));
@@ -1242,4 +1249,75 @@ svg {
   .poem-preview-content h2 {
     font-size: 1.4rem;
   }
+}
+.poema-breadcrumb{
+display:flex;
+gap:.75rem;
+margin-bottom:2rem;
+font-size:.9rem;
+color:#8b7b63;
+}
+
+.poema-breadcrumb a{
+text-decoration:none;
+color:#8b7b63;
+font-weight:600;
+transition:.2s;
+}
+
+.poema-breadcrumb a:hover{
+color:#b8860b;
+}
+.nav-dropdown{
+position:relative;
+}
+
+.nav-dropdown-button{
+  background:none;
+  border:none;
+  padding:0;
+  margin:0;
+  font:inherit;
+  cursor:pointer;
+  text-decoration:none;
+}
+
+.nav-dropdown-menu{
+
+display:none;
+
+position:absolute;
+
+top:100%;
+left:0;
+
+background:white;
+
+padding:1rem;
+
+border-radius:12px;
+
+min-width:250px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+flex-direction:column;
+
+gap:.7rem;
+
+z-index:100;
+}
+.nav-dropdown-button:hover{
+color:#b8860b;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown.open .nav-dropdown-menu{
+  display:flex;
+  flex-direction:column;
+}
+
+.nav-dropdown-menu a{
+text-decoration:none;
+color:#5b5142;
 }

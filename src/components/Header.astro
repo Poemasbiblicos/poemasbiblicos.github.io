@@ -1,9 +1,74 @@
 ---
 const navItems = [
   { label: 'Inicio', href: '/', active: true },
-  { label: 'Categorías', href: '#categorias' },
+
+  {
+    label: 'Categorías',
+    dropdown: true,
+
+    items: [
+      {
+        label: 'Ver todas las categorías',
+        href: '/#categorias',
+      },
+      {
+        label: 'Madres',
+        href: '/poemas/poemas-para-la-madre/',
+      },
+      {
+        label: 'English Poems for Mothers Day',
+        href: '/poemas/biblical-poems-for-mothers-day/',
+      },
+      {
+        label: 'Mujer',
+        href: '/poemas/poemas-cristianos-para-la-mujer/',
+      },
+
+      {
+        label: 'Esperanza',
+        href: '/poemas/poemas-cristianos-de-esperanza/',
+      },
+
+      {
+        label: 'Amor',
+        href: '/poemas/poemas-biblicos-de-amor/',
+      },
+
+      {
+        label: 'Reflexionar',
+        href: '/poemas/poemas-cristianos-para-reflexionar/',
+      },
+
+      {
+        label: 'Fe',
+        href: '/poemas/poemas-cristianos-de-fe/',
+      },
+
+      {
+        label: 'Fortaleza',
+        href: '/poemas/poemas-de-fortaleza/',
+      },
+
+      {
+        label: 'Niños',
+        href: '/poemas/poemas-para-ninos/',
+      },
+
+      {
+        label: 'Jóvenes',
+        href: '/poemas/poemas-cristianos-para-jovenes/',
+      },
+
+      {
+        label: 'Adolescentes',
+        href: '/poemas/poemas-cristianos-para-adolescentes/',
+      },
+
+    ],
+  },
+
   { label: 'Destacados', href: '#destacados' },
-  { label: 'Acerca de', href: '#acerca' },
+  { label: 'Acerca de', href: '/acerca/' },
 ];
 ---
 
@@ -24,15 +89,47 @@ const navItems = [
     </a>
 
     <nav class="main-nav" aria-label="Navegación principal">
-      {navItems.map((item) => (
-        <a
-          class:list={['nav-link', { 'is-active': item.active }]}
-          href={item.href}
-          aria-current={item.active ? 'page' : undefined}
-        >
-          {item.label}
-        </a>
-      ))}
-    </nav>
+
+           {navItems.map((item) => (
+
+             item.dropdown ? (
+
+            <div class="nav-dropdown">
+
+                  <button
+                        class="nav-link nav-dropdown-button"
+                        onclick="this.parentElement.classList.toggle('open')"
+                        >
+                        {item.label}
+                  </button>
+
+                  <div class="nav-dropdown-menu">
+
+                   {item.items.map((subitem) => (
+
+                      <a href={subitem.href}>
+                     {subitem.label}
+                     </a>
+
+                    ))}
+
+                  </div>
+
+            </div>
+
+          ) : (
+
+            <a
+              class:list={['nav-link', { 'is-active': item.active }]}
+              href={item.href}
+              >
+               {item.label}
+            </a>
+
+            )
+
+            ))}
+
+  </nav>
   </div>
 </header>

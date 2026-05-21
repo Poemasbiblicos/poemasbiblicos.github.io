@@ -65,7 +65,7 @@ const pageDescription =
 
            {poemas.map((poema) => (
           <a
-              href={`/poemas/${poema.id}`}
+              href={`/poemas/${poema.id.split("/").pop()}`}
            class="poem-preview-card"
             >
              <img
