@@ -45,6 +45,11 @@ hasta que todo el pan de este mundo se extingue.
 
 ---
 
+
+<img src="/images/madre.jpg" alt="imagen de una madre abrazando a su hijo" width="700"> 
+
+
+
 ### Poema II · Intercesión en la cocina
 *Lo sagrado en lo cotidiano*
 
