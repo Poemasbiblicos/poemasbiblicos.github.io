@@ -6,7 +6,9 @@ export default defineConfig({
   site: 'https://poemasbiblicos.github.io',
 
   integrations: [
-    sitemap()
+    sitemap({
+      entryLimit: 10000,
+    })
   ],
   trailingSlash: 'always',
 });
