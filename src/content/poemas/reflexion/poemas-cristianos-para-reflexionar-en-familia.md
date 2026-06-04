@@ -8,7 +8,7 @@ tags:
   - poemas bíblicos familia
   - hogar cristiano
   - fe en familia
-featured: false
+featured: true
 pubDate: "2026-05-14T00:00:00Z"
 heroImage: "/images/reflexion/reflexion4.jpg"
 ---
