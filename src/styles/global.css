@@ -304,6 +304,81 @@ svg {
   background: var(--gold);
 }
 
+.pillar-intro {
+  padding-top: 76px;
+  padding-bottom: 72px;
+  background: #fffdf9;
+}
+
+.pillar-copy {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pillar-copy h2 {
+  margin: 8px auto 24px;
+  color: #1f1f1f;
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 1.05;
+}
+
+.pillar-copy p {
+  max-width: 780px;
+  margin: 0 auto 20px;
+  color: #51483d;
+  font-size: 1.05rem;
+  line-height: 1.84;
+}
+
+.pillar-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.biblical-poems-info {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  background: #f8f6f2;
+}
+
+.faq-section {
+  padding-top: 72px;
+  padding-bottom: 88px;
+  background: #fffdf9;
+}
+
+.faq-list {
+  display: grid;
+  gap: 14px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.faq-list details {
+  border: 1px solid #ece7df;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.86);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.035);
+}
+
+.faq-list summary {
+  cursor: pointer;
+  padding: 20px 24px;
+  color: #1f1f1f;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.18;
+}
+
+.faq-list p {
+  margin: 0;
+  padding: 0 24px 22px;
+  color: #5f5f5f;
+  line-height: 1.72;
+}
+
 
 .category-track {
   display: flex;
@@ -613,15 +688,26 @@ svg {
 
 @media (max-width: 768px) {
   .featured-section {
-    padding: 80px 18px;
+    padding: 56px 18px;
+  }
+
+  .featured-image {
+    aspect-ratio: 16 / 8.5;
   }
 
   .featured-body {
-    padding: 24px;
+    padding: 22px;
   }
 
   .featured-body h3 {
-    font-size: 1.8rem;
+    font-size: 1.55rem;
+    line-height: 1.16;
+    margin-bottom: 12px;
+  }
+
+  .featured-body p {
+    line-height: 1.65;
+    margin-bottom: 20px;
   }
 }
 
@@ -762,16 +848,19 @@ svg {
   }
 
   .hero-inner {
-    padding: 46px 0 54px;
+    padding: 28px 0 34px;
   }
 
   .hero h1 {
-    font-size: 3.55rem;
-    line-height: 0.92;
+    font-size: 2.15rem;
+    line-height: 1.04;
+    margin: 8px 0 12px;
   }
 
   .hero-copy > p:not(.hero-kicker) {
-    font-size: 1.04rem;
+    font-size: 0.96rem;
+    line-height: 1.56;
+    margin-bottom: 18px;
   }
 
   .hero-canvas {
@@ -781,15 +870,47 @@ svg {
   }
 
   .section {
-    padding: 64px 0;
+    padding: 38px 0;
   }
 
   .section-heading {
-    margin-bottom: 26px;
+    margin-bottom: 18px;
   }
 
   .section-title {
-    font-size: 2.42rem;
+    font-size: 1.72rem;
+    line-height: 1.06;
+  }
+
+  .pillar-intro,
+  .biblical-poems-info,
+  .faq-section {
+    padding-top: 42px;
+    padding-bottom: 44px;
+  }
+
+  .pillar-copy {
+    text-align: left;
+  }
+
+  .pillar-copy h2 {
+    font-size: 1.8rem;
+    line-height: 1.08;
+  }
+
+  .pillar-copy p {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .faq-list summary {
+    padding: 17px 18px;
+    font-size: 1.18rem;
+  }
+
+  .faq-list p {
+    padding: 0 18px 18px;
+    line-height: 1.62;
   }
 
   .featured-grid {
@@ -827,7 +948,7 @@ svg {
   }
 
   .featured-body h3 {
-    font-size: 1.52rem;
+    font-size: 1.42rem;
   }
 
   .article-meta,
@@ -925,6 +1046,8 @@ svg {
 
   box-shadow:
     0 10px 30px rgba(0,0,0,0.04);
+
+  counter-reset: poema-stanza;
 }
 
 .poema-content h1,
@@ -948,6 +1071,30 @@ svg {
   font-size: 2.3rem;
 }
 
+.poema-content h2:has(+ p br) {
+  counter-increment: poema-stanza;
+  max-width: 640px;
+  margin: 58px auto 18px;
+  text-align: center;
+  color: #2a2117;
+}
+
+.poema-content h2:has(+ p br)::before {
+  content: counter(poema-stanza, upper-roman);
+  display: block;
+  width: max-content;
+  margin: 0 auto 14px;
+  padding: 6px 14px;
+  border-top: 1px solid #d9c79e;
+  border-bottom: 1px solid #d9c79e;
+  color: #b88a2f;
+  font-family: "Inter", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  line-height: 1;
+}
+
 .poema-content h3 {
   font-size: 1.8rem;
 }
@@ -960,6 +1107,26 @@ svg {
   color: #444;
 
   margin-bottom: 28px;
+}
+
+.poema-content p:has(br) {
+  max-width: 620px;
+  margin: 0 auto 28px;
+  padding: 26px 28px;
+  border: 1px solid rgba(184,138,47,0.16);
+  border-radius: 22px;
+  background: #fbf8f1;
+  color: #2d251d;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.34rem;
+  line-height: 2.18;
+  text-align: center;
+  text-wrap: balance;
+  box-shadow: 0 14px 34px rgba(82,62,34,0.045);
+}
+
+.poema-content p:has(br) + p:has(br) {
+  margin-top: 12px;
 }
 
 .poema-content em {
@@ -975,7 +1142,9 @@ svg {
 
   border-top: 1px solid #e7dfd2;
 
-  margin: 56px 0;
+  max-width: 140px;
+
+  margin: 48px auto;
 }
 
 .poema-content blockquote {
@@ -1006,32 +1175,257 @@ svg {
 }
 
 /* =========================================
+   RELATED POEMAS
+========================================= */
+
+.related-poemas {
+  margin-top: 72px;
+}
+
+.related-poemas-heading {
+  max-width: 680px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.related-poemas-kicker {
+  margin: 0 0 10px;
+  color: #b88a2f;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.related-poemas h2 {
+  margin: 0;
+  color: #1c1c1c;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.05;
+}
+
+.related-poemas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.related-poema-card {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 18px;
+  min-height: 170px;
+  padding: 16px;
+  overflow: hidden;
+  border: 1px solid #ece7df;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.82);
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.035);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.related-poema-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(184,138,47,0.3);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+}
+
+.related-poema-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 138px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.related-poema-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.related-poema-body span {
+  margin-bottom: 10px;
+  color: #b88a2f;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.related-poema-body h3 {
+  margin: 0 0 10px;
+  color: #1f1f1f;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.42rem;
+  line-height: 1.12;
+}
+
+.related-poema-body p {
+  margin: 0;
+  color: #666;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+/* =========================================
    MOBILE
 ========================================= */
 
 @media (max-width: 768px) {
   .poema-page {
-    padding: 48px 18px;
+    padding: 26px 14px;
+  }
+
+  .poema-header {
+    margin-bottom: 24px;
+  }
+
+  .poema-category {
+    margin-bottom: 12px;
+  }
+
+  .poema-description {
+    font-size: 0.96rem;
+    line-height: 1.58;
+    margin-bottom: 18px;
+  }
+
+  .poema-image {
+    height: 170px;
+    max-height: 38vh;
+    border-radius: 18px;
   }
 
   .poema-content {
-    padding: 32px 24px;
+    padding: 22px 16px;
+    border-radius: 20px;
   }
 
   .poema-title {
-    font-size: 3rem;
+    font-size: 1.86rem;
+    line-height: 1.07;
+    margin-bottom: 12px;
   }
 
   .poema-content h1 {
-    font-size: 2.2rem;
+    font-size: 1.55rem;
   }
 
   .poema-content h2 {
-    font-size: 1.8rem;
+    font-size: 1.28rem;
+  }
+
+  .poema-content h2:has(+ p br) {
+    margin-top: 34px;
+    margin-bottom: 14px;
+  }
+
+  .poema-content h2:has(+ p br)::before {
+    margin-bottom: 12px;
+    padding: 5px 12px;
+    font-size: 0.68rem;
+    letter-spacing: 0.24em;
+  }
+
+  .poema-content h1,
+  .poema-content h2,
+  .poema-content h3 {
+    line-height: 1.16;
+    margin-top: 26px;
+    margin-bottom: 10px;
   }
 
   .poema-content p {
-    font-size: 1rem;
+    font-size: 0.96rem;
+    line-height: 1.66;
+    margin-bottom: 16px;
+  }
+
+  .poema-content p:has(br) {
+    max-width: 100%;
+    margin-bottom: 22px;
+    padding: 20px 14px;
+    border-radius: 18px;
+    font-size: 1.08rem;
+    line-height: 2.05;
+  }
+
+  .poema-content img {
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  .poema-content ul,
+  .poema-content ol {
+    margin-bottom: 24px;
+  }
+
+  .poema-content li {
+    line-height: 1.65;
+    margin-bottom: 10px;
+  }
+
+  .poema-content blockquote {
+    margin: 22px 0;
+    padding: 18px 20px;
+    border-radius: 14px;
+  }
+
+  .poema-content hr {
+    margin: 28px auto;
+  }
+
+  .related-poemas {
+    margin-top: 48px;
+  }
+
+  .related-poemas-heading {
+    margin-bottom: 22px;
+  }
+
+  .related-poemas h2 {
+    font-size: 1.85rem;
+  }
+
+  .related-poemas-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .related-poema-card {
+    grid-template-columns: 112px 1fr;
+    gap: 14px;
+    min-height: 142px;
+    padding: 12px;
+    border-radius: 20px;
+  }
+
+  .related-poema-card img {
+    min-height: 118px;
+    border-radius: 15px;
+  }
+
+  .related-poema-body span {
+    margin-bottom: 7px;
+    font-size: 0.64rem;
+  }
+
+  .related-poema-body h3 {
+    margin-bottom: 7px;
+    font-size: 1.14rem;
+  }
+
+  .related-poema-body p {
+    font-size: 0.84rem;
+    line-height: 1.45;
   }
 }
 
@@ -1236,18 +1630,91 @@ svg {
   line-height: 1.6;
 }
 
+.category-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 3rem;
+}
+
+.category-pagination a,
+.category-pagination span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.45rem;
+  min-height: 2.45rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid #ece7df;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.78);
+  color: #5b5142;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.category-pagination a:hover {
+  transform: translateY(-2px);
+  border-color: rgba(184,138,47,0.36);
+  color: #8a641f;
+}
+
+.category-pagination .is-current {
+  border-color: #b88a2f;
+  background: #b88a2f;
+  color: #fffaf1;
+}
+
+.category-pagination span[aria-disabled="true"] {
+  opacity: 0.42;
+}
+
 @media (max-width: 768px) {
   .poem-preview-card {
     flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
   }
 
   .poem-preview-card img {
     width: 100%;
-    height: 220px;
+    height: 170px;
   }
 
   .poem-preview-content h2 {
-    font-size: 1.4rem;
+    font-size: 1.28rem;
+    line-height: 1.18;
+    margin-bottom: 0.55rem;
+  }
+
+  .poem-preview-content p {
+    line-height: 1.55;
+  }
+
+  .category-poems-list {
+    gap: 1.25rem;
+    margin-top: 2.4rem;
+  }
+
+  .category-pagination {
+    gap: 0.45rem;
+    margin-top: 2.2rem;
+  }
+
+  .category-pagination a,
+  .category-pagination span {
+    min-width: 2.25rem;
+    min-height: 2.25rem;
+    padding: 0.48rem 0.72rem;
+    font-size: 0.84rem;
   }
 }
 .poema-breadcrumb{

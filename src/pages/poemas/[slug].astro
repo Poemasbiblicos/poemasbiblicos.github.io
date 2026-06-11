@@ -4,8 +4,92 @@ import { getCollection, render } from "astro:content";
 
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
+const getPoemaUrl = (poema) => `/poemas/${poema.id.split("/").pop()}`;
+
 export async function getStaticPaths() {
   const poemas = await getCollection("poemas");
+  const normalizeText = (value) =>
+    value
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+
+  const tokenize = (value) =>
+    normalizeText(value)
+      .split(/[^a-z0-9]+/)
+      .filter((word) => word.length > 2);
+
+  const countSharedWords = (sourceWords, targetWords) => {
+    const targetSet = new Set(targetWords);
+
+    return sourceWords.filter((word) => targetSet.has(word)).length;
+  };
+
+  const getRelatedPoemas = (currentPoema, allPoemas) => {
+    const currentTags = tokenize(currentPoema.data.tags.join(" "));
+    const currentCategoryWords = tokenize(currentPoema.data.category);
+    const currentTextWords = tokenize(
+      [
+        currentPoema.data.title,
+        currentPoema.data.description,
+        currentPoema.data.category,
+        currentPoema.data.tags.join(" "),
+      ].join(" ")
+    );
+
+    return allPoemas
+      .filter((candidate) => candidate.id !== currentPoema.id)
+      .map((candidate) => {
+        const candidateTags = tokenize(candidate.data.tags.join(" "));
+        const candidateCategoryWords = tokenize(candidate.data.category);
+        const candidateTextWords = tokenize(
+          [
+            candidate.data.title,
+            candidate.data.description,
+            candidate.data.category,
+            candidate.data.tags.join(" "),
+          ].join(" ")
+        );
+
+        const sameCategory =
+          candidate.data.category === currentPoema.data.category;
+        const sharedTags = countSharedWords(currentTags, candidateTags);
+        const sharedCategoryWords = countSharedWords(
+          currentCategoryWords,
+          candidateCategoryWords
+        );
+        const sharedTextWords = countSharedWords(
+          currentTextWords,
+          candidateTextWords
+        );
+
+        return {
+          poema: candidate,
+          score:
+            (sameCategory ? 1000 : 0) +
+            sharedTags * 80 +
+            sharedCategoryWords * 24 +
+            sharedTextWords * 4 +
+            (candidate.data.featured ? 2 : 0),
+        };
+      })
+      .sort((a, b) => {
+        if (b.score !== a.score) {
+          return b.score - a.score;
+        }
+
+        const dateDiff =
+          b.poema.data.pubDate.getTime() - a.poema.data.pubDate.getTime();
+
+        if (dateDiff !== 0) {
+          return dateDiff;
+        }
+
+        return a.poema.data.title.localeCompare(b.poema.data.title);
+      })
+      .slice(0, 6)
+      .map(({ poema }) => poema);
+  };
 
   return poemas.map((poema) => ({
     params: {
@@ -13,11 +97,12 @@ export async function getStaticPaths() {
     },
     props: {
       poema,
+      relatedPoemas: getRelatedPoemas(poema, poemas),
     },
   }));
 }
 
-const { poema } = Astro.props;
+const { poema, relatedPoemas } = Astro.props;
 
 const { Content } = await render(poema);
 const categorySlug = poema.data.category
@@ -70,6 +155,50 @@ const categorySlug = poema.data.category
       <section class="poema-content">
         <Content />
       </section>
+
+      {relatedPoemas.length > 0 && (
+        <section class="related-poemas" aria-labelledby="related-poemas-title">
+          <div class="related-poemas-heading">
+            <p class="related-poemas-kicker">
+              Seguir leyendo
+            </p>
+
+            <h2 id="related-poemas-title">
+              Poemas relacionados
+            </h2>
+          </div>
+
+          <div class="related-poemas-grid">
+            {relatedPoemas.map((relatedPoema) => (
+              <a
+                class="related-poema-card"
+                href={getPoemaUrl(relatedPoema)}
+              >
+                <img
+                  src={relatedPoema.data.heroImage}
+                  alt={relatedPoema.data.title}
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="related-poema-body">
+                  <span>
+                    {relatedPoema.data.category}
+                  </span>
+
+                  <h3>
+                    {relatedPoema.data.title}
+                  </h3>
+
+                  <p>
+                    {relatedPoema.data.description}
+                  </p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
     </div>
   </article>
 </BaseLayout>

@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
 
 const getCategorySlug = (category) =>
   category
@@ -31,26 +31,38 @@ export async function getStaticPaths() {
     ),
   ];
 
-  return categories.map((category) => ({
-    params: {
-      category: getStaticCategorySlug(category)
-    },
+  return categories.flatMap((category) => {
+    const categoryPoemas = poemas.filter(
+      (poema) =>
+        poema.data.category === category
+    );
+    const totalPages = Math.ceil(categoryPoemas.length / poemsPerPage);
 
-    props: {
-      category,
-      poemas: poemas.filter(
-        (poema) =>
-          poema.data.category === category
-      ).slice(0, poemsPerPage),
-      currentPage: 1,
-      totalPages: Math.ceil(
-        poemas.filter(
-          (poema) =>
-            poema.data.category === category
-        ).length / poemsPerPage
-      ),
-    },
-  }));
+    return Array.from(
+      { length: Math.max(totalPages - 1, 0) },
+      (_, index) => {
+        const currentPage = index + 2;
+        const startIndex = (currentPage - 1) * poemsPerPage;
+
+        return {
+          params: {
+            category: getStaticCategorySlug(category),
+            page: String(currentPage),
+          },
+
+          props: {
+            category,
+            poemas: categoryPoemas.slice(
+              startIndex,
+              startIndex + poemsPerPage
+            ),
+            currentPage,
+            totalPages,
+          },
+        };
+      }
+    );
+  });
 }
 
 const { category, poemas, currentPage, totalPages } = Astro.props;
@@ -60,10 +72,10 @@ const paginationPages = Array.from(
   (_, index) => index + 1
 );
 
-const pageTitle = `${category} | Poemas Bíblicos`;
+const pageTitle = `${category} - PÃ¡gina ${currentPage} | Poemas BÃ­blicos`;
 
 const pageDescription =
-  `Explora ${category.toLowerCase()} llenos de fe, esperanza y reflexión cristiana.`;
+  `Explora ${category.toLowerCase()} llenos de fe, esperanza y reflexiÃ³n cristiana. PÃ¡gina ${currentPage}.`;
 ---
 
 <BaseLayout
@@ -76,7 +88,7 @@ const pageDescription =
 
       <div class="section-heading">
         <p class="section-kicker">
-          Categoría
+          CategorÃ­a
         </p>
 
         <h1 class="section-title">
@@ -160,6 +172,5 @@ const pageDescription =
 
     </div>
   </section>
-  
 
 </BaseLayout>
