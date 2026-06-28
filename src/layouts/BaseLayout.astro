@@ -6,7 +6,8 @@ import "../styles/global.css";
 
 const {
   title = "Poemas Bíblicos",
-  description = "Poemas Bíblicos y cristianos para reflexionar y llenos de fe, amor y esperanza",
+  description = "La mayor colección de poemas bíblicos y cristianos
+sobre fe, amor, esperanza, familia, jóvenes y reflexión.",
   image = "/images/og-image.jpg",
 } = Astro.props; 
 
@@ -19,6 +20,13 @@ const fullImageURL = new URL(image, Astro.site);
 
 <html lang="es">
   <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WC8KXP8B');</script>
+<!-- End Google Tag Manager -->
     <meta charset="utf-8" />
     <meta name="google-site-verification" content="RoiVmzQbA3nEobGzkaUNrneAVI_lxBrA3pyzrnH0T6M" />
 
@@ -96,6 +104,10 @@ const fullImageURL = new URL(image, Astro.site);
   </head>
 
   <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC8KXP8B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <Header />
 
     <main>
