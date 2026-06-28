@@ -105,6 +105,6 @@ Estos poemas para la familia cristiana buscan acompañar cada etapa del hogar co
 
 ## Explorar más poemas
 
-- [Poemas Cristianos de Fortaleza](/poemas-cristianos-de-fortaleza)
-- [Poemas Cristianos Esperanza](/poemas-cristianos-esperanza)
-- [Poemas Bíblicos de Amor](/poemas-biblicos-de-amor)
+- [Poemas Cristianos de Fortaleza](/poemas/poemas-de-fortaleza/)
+- [Poemas Cristianos Esperanza](/poemas/poemas-cristianos-de-esperanza/)
+- [Poemas Bíblicos de Amor](/poemas/poemas-biblicos-de-amor/)
