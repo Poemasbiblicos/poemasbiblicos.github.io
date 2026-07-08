@@ -1,7 +1,7 @@
 ---
 title: "Poemas Cristianos de Fortaleza | Versos bíblicos para el alma que persevera"
 description: "Poemas cristianos de fortaleza y ánimo escritos con fe profunda para el alma que lucha, resiste y vence sostenida por la mano de Dios."
-category: "Poemas de Fortaleza"
+category: "Poemas Cristianos de Fortaleza"
 tags:
   - fortaleza cristiana
   - poemas de fortaleza
@@ -91,5 +91,5 @@ Estos poemas de fortaleza espiritual recogen la promesa bíblica de que Dios ren
 ## Explorar más poemas
 
 - [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe/)
-- [Poemas Cristianos Esperanza](/poemas/poemas-cristianos-esperanza/)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-esperanza/)
 - [Poemas Cristianos para Reflexionar](/poemas/poemas-cristianos-para-reflexionar)

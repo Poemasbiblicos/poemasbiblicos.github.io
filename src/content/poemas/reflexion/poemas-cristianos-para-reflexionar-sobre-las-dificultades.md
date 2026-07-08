@@ -100,5 +100,5 @@ Los poemas para reflexionar sobre las dificultades con fe cristiana no son anest
 ## Explorar más poemas
 
 - [Poemas Cristianos de Fortaleza](/poemas/poemas-cristianos-de-fortaleza)
-- [Poemas Cristianos Esperanza](/poemas/poemas-cristianos-esperanza)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-esperanza)
 - [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe)

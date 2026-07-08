@@ -17,7 +17,7 @@ featured: true
 
 pubDate: "2026-05-14T00:00:00Z"
 
-heroImage: "/images/joven.jpg"
+heroImage: "/images/adolescentes.jpg"
 ---
 
 ## Como el Viento que Pasa

@@ -105,6 +105,6 @@ Estos poemas de fe en familia son también versos para familias que creen que la
 
 ## Explorar más poemas
 
-- [Poemas Cristianos para Reflexionar](/poemas/poema-cristianos-para-reflexionar/)
-- [Poemas Cristianos Esperanza](/poemas/poemas-cristianos-de-esperanza/)
-- [Poemas Cristianos de Fortaleza](/poemas/poemas-de-fortaleza/)
+- [Poemas Cristianos para Reflexionar](/poemas/poemas-cristianos-para-reflexionar/)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza/)
+- [Poemas Cristianos de Fortaleza](/poemas/poemas-cristianos-de-fortaleza/)

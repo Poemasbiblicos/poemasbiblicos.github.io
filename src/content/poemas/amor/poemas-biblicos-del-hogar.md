@@ -105,6 +105,6 @@ Estos poemas bíblicos del hogar son también versos de amor para familias creye
 
 ## Explorar más poemas
 
-- [Poemas Cristianos para Reflexionar](/poemas/poema-cristianos-para-reflexionar/)
+- [Poemas Cristianos para Reflexionar](/poemas/poemas-cristianos-para-reflexionar/)
 - [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe/)
-- [Poemas Cristianos Esperanza](/poemas/poemas-cristianos-de-esperanza/)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza/)

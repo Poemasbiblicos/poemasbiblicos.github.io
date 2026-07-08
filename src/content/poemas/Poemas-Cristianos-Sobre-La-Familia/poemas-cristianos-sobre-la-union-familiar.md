@@ -1,21 +1,21 @@
 ---
-title: "Poemas Cristianos para la Familia | Versos bíblicos para el hogar"
-description: "Poemas cristianos para la familia que celebran la fe, el amor y la unidad del hogar inspirados en las Escrituras."
-category: "Poemas Cristianos para Reflexionar"
+title: "Poemas Cristianos sobre la Unión Familiar | Versos bíblicos para el hogar"
+description: "Poemas cristianos sobre la unión familiar que celebran la fe, el amor y la unidad del hogar inspirados en las Escrituras."
+category: "Poemas Cristianos Sobre La Familia"
 tags:
-  - poemas cristianos para la familia
+  - poemas cristianos sobre la unión familiar
   - poemas bíblicos del hogar
   - familia cristiana
   - fe en familia
   - versos bíblicos
-featured: true
+featured: false
 pubDate: "2026-06-10T00:00:00Z"
-heroImage: "/images/reflexion.jpg"
+heroImage: "/images/familia.jpg"
 ---
 
-# Poemas Cristianos para la Familia
+# Poemas Cristianos sobre la Unión Familiar
 
-Los poemas cristianos para la familia recogen en versos lo que las palabras cotidianas apenas alcanzan: la fe que se respira en cada cuarto, el amor que sostiene sin decirse.
+Los poemas cristianos sobre la unión familiar recogen en versos lo que las palabras cotidianas apenas alcanzan: la fe que se respira en cada cuarto, el amor que sostiene sin decirse.
 
 ---
 
@@ -97,14 +97,14 @@ sobre rocas y no sobre plegarias.<br>
 
 ---
 
-## Poemas bíblicos del hogar
+## Poemas de unión familiar cristiana
 
-Estos poemas cristianos para la familia son también versos bíblicos del hogar: palabras que nacen de la fe y vuelven a ella, para que cada familia creyente encuentre en ellos un espejo de su propio camino.
+Estos poemas cristianos sobre la unión familiar nacen de la fe y vuelven a ella, para que cada familia creyente encuentre en sus versos un espejo de su propio camino.
 
 ---
 
 ## Explorar más poemas
 
 - [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe/)
-- [Poemas Cristianos Esperanza](/poemas/poemas-cristianos-de-esperanza/)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza/)
 - [Poemas Bíblicos de Amor](/poemas/poemas-biblicos-de-amor/)

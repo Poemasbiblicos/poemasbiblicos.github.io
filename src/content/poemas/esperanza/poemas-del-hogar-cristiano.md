@@ -1,7 +1,7 @@
 ---
 title: "Poemas del Hogar Cristiano | Versos de esperanza para la familia"
 description: "Poemas del hogar cristiano que llenan de esperanza, fe y amor cada rincón de la familia creyente."
-category: "Poemas Cristianos Esperanza"
+category: "Poemas Cristianos de Esperanza"
 tags:
   - poemas del hogar cristiano
   - poema cristiano del hogar
@@ -106,5 +106,5 @@ Los poemas del hogar cristiano son también un regalo para familias creyentes qu
 ## Explorar más poemas
 
 - [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe/)
-- [Poemas Cristianos para Reflexionar](/poemas/poema-cristianos-para-reflexionar/)
+- [Poemas Cristianos para Reflexionar](/poemas/poemas-cristianos-para-reflexionar/)
 - [Poemas Bíblicos de Amor](/poemas/poemas-biblicos-de-amor/)

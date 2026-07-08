@@ -3,7 +3,7 @@ title: "Poemas Cristianos para Jóvenes | Versos bíblicos para las nuevas gener
 
 description: "Poemas cristianos para jóvenes con imágenes bíblicas de fuego, camino y llamado para el alma joven que busca su identidad en Cristo."
 
-category: "Poemas Cristianos para Jovenes"
+category: "Poemas Cristianos para Jóvenes"
 
 tags:
   - poemas para jóvenes
@@ -98,6 +98,6 @@ Estos poemas cristianos para jóvenes nacen de las Escrituras para hablarle al c
 
 - [Poemas Cristianos para Adolescentes](/poemas/poemas-cristianos-para-adolescentes/)
 
-- [Poemas Cristianos de Fortaleza](/poemas/poemas-de-fortaleza/)
+- [Poemas Cristianos de Fortaleza](/poemas/poemas-cristianos-de-fortaleza/)
 
 - [Poemas cristianos de Fe](/poemas/poemas-cristianos-de-fe/)

@@ -105,6 +105,6 @@ Estos poemas sobre valores cristianos en familia son también un llamado a vivir
 
 ## Explorar más poemas
 
-- [Poemas Cristianos para Reflexionar](/poemas/poema-cristianos-para-reflexionar/)
-- [Poemas Cristianos de Fortaleza](/poemas/poemas-de-fortaleza/)
+- [Poemas Cristianos para Reflexionar](/poemas/poemas-cristianos-para-reflexionar/)
+- [Poemas Cristianos de Fortaleza](/poemas/poemas-cristianos-de-fortaleza/)
 - [Poemas Bíblicos de Amor](/poemas/poemas-biblicos-de-amor/)

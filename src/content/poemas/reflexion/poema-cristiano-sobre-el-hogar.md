@@ -10,7 +10,7 @@ tags:
   - familia y Dios
 featured: true
 pubDate: "2026-06-10T00:00:00Z"
-heroImage: "/images/reflexion.jpg"
+heroImage: "/images/reflexion/reflexion5.jpg"
 ---
 
 # Poema Cristiano sobre el Hogar
@@ -106,5 +106,5 @@ Estos poemas sobre el hogar son también una invitación a reflexionar: ¿qué s
 ## Explorar más poemas
 
 - [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe/)
-- [Poemas Cristianos de Fortaleza](/poemas/poemas-de-fortaleza/)
-- [Poemas Cristianos Esperanza](/poemas/poemas-cristianos-de-esperanza/)
+- [Poemas Cristianos de Fortaleza](/poemas/poemas-cristianos-de-fortaleza/)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza/)

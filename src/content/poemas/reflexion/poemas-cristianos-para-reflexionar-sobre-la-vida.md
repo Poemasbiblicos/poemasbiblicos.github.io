@@ -98,6 +98,6 @@ Estos poemas para reflexionar sobre la vida cristiana recogen la experiencia del
 
 ## Explorar más poemas
 
-- [Poemas Cristianos Esperanza](/poemas/poemas-cristianos-esperanza)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-esperanza)
 - [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe)
 - [Poemas Bíblicos de Amor](/poemas/poemas-biblicos-de-amor)

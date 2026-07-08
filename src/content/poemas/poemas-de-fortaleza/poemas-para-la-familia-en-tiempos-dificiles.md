@@ -105,6 +105,6 @@ Estos poemas para la familia en tiempos difíciles son también versos de fortal
 
 ## Explorar más poemas
 
-- [Poemas Cristianos Esperanza](/poemas/poemas-cristianos-de-esperanza/)
-- [Poemas Cristianos para Reflexionar](/poemas/poema-cristianos-para-reflexionar/)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza/)
+- [Poemas Cristianos para Reflexionar](/poemas/poemas-cristianos-para-reflexionar/)
 - [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe/)

@@ -1,14 +1,14 @@
 ---
 title: "Biblical Poems for Mothers Day"
 description: "Beautiful biblical poems for Mother's Day."
-category: "Poems for Mothers Day"
+category: "Biblical Poems for Mothers Day"
 slug: "biblical-poems-for-mothers-day"
 tags:
   - biblical poems
   - mother day
 featured: true
 pubDate: "2026-05-06T00:00:00Z"
-heroImage: "/images/madre.jpg"
+heroImage: "/images/mother-day.jpg"
 ---
 # Ten Biblical Poems for Mother's Day
 

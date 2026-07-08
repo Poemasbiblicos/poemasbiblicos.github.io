@@ -16,7 +16,7 @@ featured: true
 
 pubDate: "2026-06-10T00:00:00Z"
 
-heroImage: "/images/reflexion.jpg"
+heroImage: "/images/familia.jpg"
 ---
 
 # Poemas Cristianos para la Familia
@@ -105,6 +105,6 @@ Estos poemas para la familia cristiana buscan acompañar cada etapa del hogar co
 
 ## Explorar más poemas
 
-- [Poemas Cristianos de Fortaleza](/poemas/poemas-de-fortaleza/)
-- [Poemas Cristianos Esperanza](/poemas/poemas-cristianos-de-esperanza/)
+- [Poemas Cristianos de Fortaleza](/poemas/poemas-cristianos-de-fortaleza/)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza/)
 - [Poemas Bíblicos de Amor](/poemas/poemas-biblicos-de-amor/)
