@@ -20,7 +20,7 @@ pubDate: "2026-05-14T00:00:00Z"
 heroImage: "/images/adolescentes.jpg"
 ---
 
-## Como el Viento que Pasa
+# Como el Viento que Pasa
 
 La juventud es un río de aguas transparentes,<br>
 que corre entre los dedos sin que nadie lo llame,<br>

@@ -787,7 +787,7 @@ svg {
     width: 100%;
     justify-content: flex-start;
     gap: 24px;
-    overflow-x: auto;
+    flex-wrap: wrap;
     padding-bottom: 4px;
   }
 
@@ -1046,8 +1046,6 @@ svg {
 
   box-shadow:
     0 10px 30px rgba(0,0,0,0.04);
-
-  counter-reset: poema-stanza;
 }
 
 .poema-content h1,
@@ -1067,32 +1065,20 @@ svg {
   font-size: 3rem;
 }
 
+.poema-content h1:first-child {
+  margin-top: 0;
+}
+
 .poema-content h2 {
   font-size: 2.3rem;
 }
 
-.poema-content h2:has(+ p br) {
-  counter-increment: poema-stanza;
+.poema-content h2:has(+ .poema-cuadro),
+.poema-content h2:has(+ p + .poema-cuadro) {
   max-width: 640px;
   margin: 58px auto 18px;
   text-align: center;
   color: #2a2117;
-}
-
-.poema-content h2:has(+ p br)::before {
-  content: counter(poema-stanza, upper-roman);
-  display: block;
-  width: max-content;
-  margin: 0 auto 14px;
-  padding: 6px 14px;
-  border-top: 1px solid #d9c79e;
-  border-bottom: 1px solid #d9c79e;
-  color: #b88a2f;
-  font-family: "Inter", sans-serif;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.28em;
-  line-height: 1;
 }
 
 .poema-content h3 {
@@ -1109,24 +1095,43 @@ svg {
   margin-bottom: 28px;
 }
 
-.poema-content p:has(br) {
+.poema-cuadro {
   max-width: 620px;
   margin: 0 auto 28px;
-  padding: 26px 28px;
+  padding: 34px 28px;
   border: 1px solid rgba(184,138,47,0.16);
   border-radius: 22px;
   background: #fbf8f1;
+  box-shadow: 0 14px 34px rgba(82,62,34,0.045);
+  counter-reset: poema-estrofa;
+}
+
+.poema-cuadro p {
+  margin: 0 auto 34px;
   color: #2d251d;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.34rem;
   line-height: 2.18;
   text-align: center;
   text-wrap: balance;
-  box-shadow: 0 14px 34px rgba(82,62,34,0.045);
 }
 
-.poema-content p:has(br) + p:has(br) {
-  margin-top: 12px;
+.poema-cuadro p:last-child {
+  margin-bottom: 0;
+}
+
+.poema-cuadro p::before {
+  counter-increment: poema-estrofa;
+  content: counter(poema-estrofa, upper-roman);
+  display: block;
+  width: max-content;
+  margin: 0 auto 12px;
+  color: #b88a2f;
+  font-family: "Inter", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  line-height: 1;
 }
 
 .poema-content em {
@@ -1315,23 +1320,17 @@ svg {
   }
 
   .poema-content h1 {
-    font-size: 1.55rem;
+    font-size: 1.86rem;
   }
 
   .poema-content h2 {
     font-size: 1.28rem;
   }
 
-  .poema-content h2:has(+ p br) {
+  .poema-content h2:has(+ .poema-cuadro),
+  .poema-content h2:has(+ p + .poema-cuadro) {
     margin-top: 34px;
     margin-bottom: 14px;
-  }
-
-  .poema-content h2:has(+ p br)::before {
-    margin-bottom: 12px;
-    padding: 5px 12px;
-    font-size: 0.68rem;
-    letter-spacing: 0.24em;
   }
 
   .poema-content h1,
@@ -1348,11 +1347,15 @@ svg {
     margin-bottom: 16px;
   }
 
-  .poema-content p:has(br) {
+  .poema-cuadro {
     max-width: 100%;
     margin-bottom: 22px;
-    padding: 20px 14px;
+    padding: 24px 14px;
     border-radius: 18px;
+  }
+
+  .poema-cuadro p {
+    margin-bottom: 26px;
     font-size: 1.08rem;
     line-height: 2.05;
   }

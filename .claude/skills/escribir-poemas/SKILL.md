@@ -144,6 +144,7 @@ Distribuir variantes de la keyword sin repetir la misma forma (ejemplo para madr
 ## Prohibido
 
 - Inventar o variar nombres de categorías, rutas o imágenes.
+- Agregar un campo `slug:` al frontmatter: Astro lo usaría como URL del artículo y puede chocar con la URL de una categoría (la URL correcta sale sola del nombre del archivo).
 - Repetir el mismo título, H1 o keyword entre archivos distintos.
 - Usar apóstrofes u otros signos especiales en `category`.
 - Crear archivos con espacios, mayúsculas o sufijos `(1)` en el nombre.

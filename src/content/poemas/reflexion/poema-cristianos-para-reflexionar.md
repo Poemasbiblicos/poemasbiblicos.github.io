@@ -19,7 +19,11 @@ pubDate: "2026-05-14T00:00:00Z"
 
 heroImage: "/images/reflexion/reflexion1.jpg"
 ---
-# El Barro y la Mano
+# Poemas Cristianos para Reflexionar
+
+Estos poemas cristianos para reflexionar invitan a mirar la vida, la fe y el propósito espiritual a la luz de Dios.
+
+## El Barro y la Mano
 
 Hay una mano que moldea lo que tiembla,<br>
 que desciende al polvo oscuro sin temor,<br>
@@ -43,7 +47,7 @@ nace la forma que el amor no tausce.<br>
 
 ---
 
-# Tiempo en el Desierto
+## Tiempo en el Desierto
 
 El desierto no devora, purifica;<br>
 sus silencios pesan como pan sin sal,<br>
@@ -67,7 +71,7 @@ llegan sólo cuando el alma se despega.<br>
 
 ---
 
-# Semilla en Oscuridad
+## Semilla en Oscuridad
 
 Nadie ve lo que comienza bajo tierra,<br>
 el movimiento lento de la cáscara<br>
