@@ -100,5 +100,5 @@ Los poemas para reflexionar en familia cristiana son semillas de conversación: 
 ## Explorar más poemas
 
 - [Poemas Bíblicos de Amor](/poemas/poemas-biblicos-de-amor)
-- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-esperanza)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza)
 - [Poemas Cristianos para la Mujer](/poemas/poemas-cristianos-para-la-mujer)

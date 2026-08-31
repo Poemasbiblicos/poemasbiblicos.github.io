@@ -92,7 +92,7 @@ const pageDescription =
 
            {poemas.map((poema) => (
           <a
-              href={`/poemas/${poema.id.split("/").pop()}`}
+              href={`/poemas/${poema.id.split("/").pop()}/`}
            class="poem-preview-card"
             >
              <img
@@ -123,7 +123,7 @@ const pageDescription =
         </div>
 
         {totalPages > 1 && (
-          <nav class="category-pagination" aria-label="PaginaciÃ³n de poemas">
+          <nav class="category-pagination" aria-label="Paginación de poemas">
             {currentPage > 1 ? (
               <a href={getCategoryPageUrl(categorySlug, currentPage - 1)}>
                 Anterior

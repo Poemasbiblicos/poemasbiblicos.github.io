@@ -4,7 +4,7 @@ import { getCollection, render } from "astro:content";
 
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
-const getPoemaUrl = (poema) => `/poemas/${poema.id.split("/").pop()}`;
+const getPoemaUrl = (poema) => `/poemas/${poema.id.split("/").pop()}/`;
 
 export async function getStaticPaths() {
   const poemas = await getCollection("poemas");
@@ -116,6 +116,7 @@ const categorySlug = poema.data.category
   title={poema.data.title}
   description={poema.data.description}
   image={poema.data.heroImage}
+  schemaType="Article"
 >
   <article class="poema-page">
     <div class="poema-container">

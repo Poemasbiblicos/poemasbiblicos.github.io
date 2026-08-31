@@ -121,5 +121,5 @@ fue el pan del cielo repartido en cuanto.<br>
 ## Explorar más poemas
 
 - [Poemas Cristianos para la Mujer](/poemas/poemas-cristianos-para-la-mujer/)
-- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-esperanza/)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza/)
 - [Poemas Bíblicos de Amor](/poemas/poemas-biblicos-de-amor/)

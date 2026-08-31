@@ -72,10 +72,10 @@ const paginationPages = Array.from(
   (_, index) => index + 1
 );
 
-const pageTitle = `${category} - PÃ¡gina ${currentPage} | Poemas BÃ­blicos`;
+const pageTitle = `${category} - Página ${currentPage} | Poemas Bíblicos`;
 
 const pageDescription =
-  `Explora ${category.toLowerCase()} llenos de fe, esperanza y reflexiÃ³n cristiana. PÃ¡gina ${currentPage}.`;
+  `Explora ${category.toLowerCase()} llenos de fe, esperanza y reflexión cristiana. Página ${currentPage}.`;
 ---
 
 <BaseLayout
@@ -88,7 +88,7 @@ const pageDescription =
 
       <div class="section-heading">
         <p class="section-kicker">
-          CategorÃ­a
+          Categoría
         </p>
 
         <h1 class="section-title">
@@ -104,7 +104,7 @@ const pageDescription =
 
            {poemas.map((poema) => (
           <a
-              href={`/poemas/${poema.id.split("/").pop()}`}
+              href={`/poemas/${poema.id.split("/").pop()}/`}
            class="poem-preview-card"
             >
              <img
@@ -135,7 +135,7 @@ const pageDescription =
         </div>
 
         {totalPages > 1 && (
-          <nav class="category-pagination" aria-label="PaginaciÃ³n de poemas">
+          <nav class="category-pagination" aria-label="Paginación de poemas">
             {currentPage > 1 ? (
               <a href={getCategoryPageUrl(categorySlug, currentPage - 1)}>
                 Anterior
