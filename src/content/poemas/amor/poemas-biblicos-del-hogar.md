@@ -8,7 +8,7 @@ tags:
   - amor en el hogar cristiano
   - versos bíblicos del hogar
   - amor y familia
-featured: true
+featured: false
 pubDate: "2026-06-10T00:00:00Z"
 heroImage: "/images/amar-a-dios.jpg"
 ---

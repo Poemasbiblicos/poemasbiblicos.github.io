@@ -8,7 +8,7 @@ tags:
   - poemas bíblicos
   - esperanza cristiana
   - fe en la oscuridad
-featured: true
+featured: false
 pubDate: "2026-05-14T00:00:00Z"
 heroImage: "/images/reflexion/reflexion3.jpg"
 ---

@@ -8,7 +8,7 @@ tags:
   - mujer creyente en el hogar
   - versos bíblicos para la esposa
   - esposa de fe
-featured: true
+featured: false
 pubDate: "2026-06-10T00:00:00Z"
 heroImage: "/images/mujer.jpg"
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Tres Cantos para Tener Esperanza"
+title: "Poema para Tener Esperanza | Tres cantos de aliento bíblico"
 description: "Poema cristiano de esperanza inspirado en la fe, la perseverancia y las promesas de Dios."
 category: "Poemas Cristianos de Esperanza"
 tags:
@@ -12,7 +12,7 @@ pubDate: "2026-05-14T00:00:00Z"
 heroImage: "/images/fortaleza.jpg"
 ---
 
-# Tres cantos para tener esperanza
+# Poema para Tener Esperanza
 
 *Colección poética · voz lírica cristiana · arte mayor con rima asonante*
 
@@ -96,3 +96,11 @@ del pecho, abre una grieta y nos despierta.<br>
 
 ---
 
+
+---
+
+## Explorar más poemas
+
+- [Poemas Cristianos de Fortaleza](/poemas/poemas-cristianos-de-fortaleza/)
+- [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe/)
+- [Poemas Cristianos para Reflexionar](/poemas/poemas-cristianos-para-reflexionar/)

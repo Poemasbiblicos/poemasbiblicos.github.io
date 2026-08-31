@@ -8,7 +8,7 @@ tags:
   - valores bíblicos en familia
   - servicio cristiano en casa
   - humildad familiar cristiana
-featured: true
+featured: false
 pubDate: "2026-06-10T00:00:00Z"
 heroImage: "/images/fe.jpg"
 ---

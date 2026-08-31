@@ -1,7 +1,7 @@
 ---
-title: "Poemas Cristianos para Mamá | Versos bíblicos para honrar a las madres"
+title: "Poemas Cristianos para Mamá | Versos bíblicos bonitos para dedicarle hoy"
 
-description: "Poemas cristianos para mamá llenos de fe, gratitud y amor. Versos bíblicos que honran a las madres con imágenes del hogar, el pan y el amanecer."
+description: "Poemas cristianos para mamá que puedes dedicarle hoy: versos bíblicos de gratitud, amor y bendición para decirle cuánto la quieres."
 
 category: "Poemas para la Madre"
 

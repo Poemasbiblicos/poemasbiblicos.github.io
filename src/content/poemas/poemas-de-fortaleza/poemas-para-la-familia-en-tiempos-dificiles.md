@@ -8,7 +8,7 @@ tags:
   - fortaleza familiar cristiana
   - consuelo bíblico para la familia
   - esperanza en las pruebas familiares
-featured: true
+featured: false
 pubDate: "2026-06-10T00:00:00Z"
 heroImage: "/images/fortaleza.jpg"
 ---

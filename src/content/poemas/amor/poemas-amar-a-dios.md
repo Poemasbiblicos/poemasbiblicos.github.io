@@ -1,5 +1,5 @@
 ---
-title: "Poema Cristiano sobre Amar a Dios"
+title: "Poemas para Amar a Dios | Tres cantos al amor del Padre"
 description: "Poema cristiano sobre amar a Dios, la fe, la adoración y el amor bíblico inspirado en las Escrituras."
 category: "Poemas Bíblicos de Amor"
 
@@ -11,14 +11,14 @@ tags:
   - adoración
   - poemas de amor a Dios
 
-featured: true
+featured: false
 
 pubDate: "2026-05-14T00:00:00Z"
 
 heroImage: "/images/amar-a-dios.jpg"
 ---
 
-# Tres cantos sobre el amar a Dios
+# Poemas para Amar a Dios
 
 *Colección poética · voz lírica cristiana · arte mayor con rima asonante*
 
@@ -102,3 +102,11 @@ del sol: sin causa, plena, sin tardanza.<br>
 
 ---
 
+
+---
+
+## Explorar más poemas
+
+- [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe/)
+- [Poemas Cristianos para Reflexionar](/poemas/poemas-cristianos-para-reflexionar/)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza/)

@@ -8,7 +8,7 @@ tags:
   - creer en Dios
   - poemas bíblicos de fe
   - caminar en fe
-featured: true
+featured: false
 pubDate: "2026-05-14T00:00:00Z"
 heroImage: "/images/reflexion/reflexion6.jpg"
 ---

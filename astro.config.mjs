@@ -60,6 +60,12 @@ export default defineConfig({
   ],
   trailingSlash: 'always',
 
+  redirects: {
+    '/poemas/poemas-de-fortaleza/': '/poemas/poemas-cristianos-de-fortaleza/',
+    '/poemas/poems-for-mothers-day/': '/poemas/biblical-poems-for-mothers-day/',
+    '/poemas/poemas-cristianos-esperanza/': '/poemas/poemas-cristianos-de-esperanza/',
+  },
+
   markdown: {
     rehypePlugins: [agruparEstrofas],
   },

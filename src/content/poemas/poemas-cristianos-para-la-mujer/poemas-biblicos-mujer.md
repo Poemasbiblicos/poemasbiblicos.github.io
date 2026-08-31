@@ -1,11 +1,11 @@
 ---
-title: "Poemas Cristianos para la Mujer"
-description: "Poemas bíblicos dedicados a la mujer cristiana."
+title: "Poemas Bíblicos para la Mujer | Versos inspirados en mujeres de la Biblia"
+description: "Diez poemas bíblicos para la mujer cristiana, inspirados en Proverbios 31, Sara, Rut y las mujeres del Evangelio."
 category: "Poemas Cristianos para la Mujer"
 tags:
   - mujer cristiana
   - poemas bíblicos
-featured: true
+featured: false
 pubDate: "2026-05-06T00:00:00Z"
 heroImage: "/images/mujer.jpg"
 ---
@@ -18,20 +18,6 @@ Colección de **10 poemas cristianos para la mujer** escritos en verso de arte m
 
 ---
 
-## Tabla de contenido
-
-1. [La que vale más que las perlas](#1-la-que-vale-más-que-las-perlas)
-2. [Vasija de honor](#2-vasija-de-honor)
-3. [Mujer de Dios al amanecer](#3-mujer-de-dios-al-amanecer)
-4. [Sara, la que ríe](#4-sara-la-que-ríe)
-5. [Rut en el campo ajeno](#5-rut-en-el-campo-ajeno)
-6. [La mujer del Cantar](#6-la-mujer-del-cantar)
-7. [Madre en Zion](#7-madre-en-zion)
-8. [La mujer que ungió](#8-la-mujer-que-ungió)
-9. [Mujer fuerte del Señor](#9-mujer-fuerte-del-señor)
-10. [Guardiana de la llama](#10-guardiana-de-la-llama)
-
----
 
 ## 1. La que vale más que las perlas
 
@@ -273,6 +259,10 @@ Colección de **10 poemas cristianos para la mujer** escritos en verso de arte m
 
 ---
 
+---
 
+## Explorar más poemas
 
-
+- [Poemas para la Madre](/poemas/poemas-para-la-madre/)
+- [Poemas Cristianos Sobre La Familia](/poemas/poemas-cristianos-sobre-la-familia/)
+- [Poemas Bíblicos de Amor](/poemas/poemas-biblicos-de-amor/)

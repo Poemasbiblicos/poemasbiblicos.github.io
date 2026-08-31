@@ -8,7 +8,7 @@ tags:
   - hogar y fe cristiana
   - poemas bíblicos reflexión
   - familia y Dios
-featured: true
+featured: false
 pubDate: "2026-06-10T00:00:00Z"
 heroImage: "/images/reflexion/reflexion5.jpg"
 ---

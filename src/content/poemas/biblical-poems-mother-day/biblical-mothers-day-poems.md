@@ -5,7 +5,7 @@ category: "Biblical Poems for Mothers Day"
 tags:
   - biblical poems
   - mother day
-featured: true
+featured: false
 pubDate: "2026-05-06T00:00:00Z"
 heroImage: "/images/mother-day.jpg"
 ---
@@ -265,3 +265,11 @@ your presence is not silence—it is force.<br>
 ---
 
 
+
+---
+
+## Explorar más poemas
+
+- [Poemas para la Madre](/poemas/poemas-para-la-madre/)
+- [Poemas Cristianos para la Mujer](/poemas/poemas-cristianos-para-la-mujer/)
+- [Poemas Cristianos Sobre La Familia](/poemas/poemas-cristianos-sobre-la-familia/)

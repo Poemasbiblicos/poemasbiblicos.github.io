@@ -8,7 +8,7 @@ tags:
   - padre cristiano
   - fortaleza del padre
   - padre de familia cristiano
-featured: true
+featured: false
 pubDate: "2026-06-10T00:00:00Z"
 heroImage: "/images/fortaleza.jpg"
 ---

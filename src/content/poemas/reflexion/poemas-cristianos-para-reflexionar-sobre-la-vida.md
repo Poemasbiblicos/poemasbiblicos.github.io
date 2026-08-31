@@ -8,7 +8,7 @@ tags:
   - poemas bíblicos
   - fe y vida
   - contemplación espiritual
-featured: true
+featured: false
 pubDate: "2026-05-14T00:00:00Z"
 heroImage: "/images/reflexion/reflexion7.jpg"
 ---

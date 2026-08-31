@@ -8,7 +8,7 @@ tags:
   - fortaleza espiritual
   - poemas bíblicos
   - fe y perseverancia
-featured: true
+featured: false
 pubDate: "2026-05-20T00:00:00Z"
 heroImage: "/images/fortaleza.jpg"
 ---

@@ -6,7 +6,46 @@ import CategoryGrid from "../components/CategoryGrid.astro";
 import FeaturedArticles from "../components/FeaturedArticles.astro";
 
 const pageTitle =
-  "Poemas Bíblicos | Poemas Cristianos la mayor colección de poemas bíblicos y cristianos sobre fe, amor, esperanza, familia, jóvenes, reflexión y muchos más.";
+  "Poemas Bíblicos | Poemas Cristianos de Fe, Amor y Esperanza";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "¿Para qué sirven los poemas bíblicos?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sirven para meditar, orar, compartir palabras de ánimo y expresar la fe con belleza. También pueden acompañar momentos familiares, devocionales o fechas especiales.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Cuál es la diferencia entre poemas bíblicos y poemas cristianos?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Los poemas bíblicos suelen estar inspirados directamente en imágenes o enseñanzas de la Biblia. Los poemas cristianos pueden abarcar una experiencia espiritual más amplia, siempre desde la fe en Dios.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Dónde encuentro poemas de fe y esperanza?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Puedes explorar las categorías de poemas de fe y poemas de esperanza desde la sección de categorías. Allí encontrarás textos pensados para fortalecer la confianza y renovar el ánimo.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Puedo compartir estos poemas bíblicos?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sí. Los poemas están pensados para ser leídos con calma y compartidos con personas que necesiten consuelo, inspiración, reflexión o una palabra cristiana de aliento.",
+      },
+    },
+  ],
+};
 
 const pageDescription =
   "Poemas bíblicos y cristianos llenos de fe, amor y esperanza para inspirar el alma y acercar el corazón a Dios.";
@@ -99,6 +138,11 @@ const pageDescription =
           FAQ sobre poemas bíblicos
         </h2>
       </div>
+
+      <script
+        type="application/ld+json"
+        set:html={JSON.stringify(faqSchema)}
+      />
 
       <div class="faq-list">
         <details>

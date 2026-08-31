@@ -1,5 +1,5 @@
 ---
-title: "Poema Cristiano sobre la Fe en Dios"
+title: "Poemas de Fe en Dios | Versos para creer y confiar"
 
 description: "Poema cristiano sobre la fe en Dios, la esperanza bíblica y la confianza espiritual en tiempos difíciles."
 
@@ -13,13 +13,13 @@ tags:
   - confianza en Dios
   - fe cristiana
 
-featured: true
+featured: false
 
 pubDate: "2026-05-14T00:00:00Z"
 
 heroImage: "/images/fortaleza.jpg"
 ---
-# Poemas de Fe
+# Poemas de Fe en Dios
 
 ---
 
@@ -92,3 +92,11 @@ Creer es este acto: inclinarse hacia lo oscuro <br>
 con la extraña certeza de ser sostenido entero, <br>
 como el pájaro que salta antes de abrir las alas <br>
 y descubre, cayendo, que ya estaba en vuelo. <br>
+
+---
+
+## Explorar más poemas
+
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza/)
+- [Poemas Cristianos para Reflexionar](/poemas/poemas-cristianos-para-reflexionar/)
+- [Poemas Cristianos de Fortaleza](/poemas/poemas-cristianos-de-fortaleza/)

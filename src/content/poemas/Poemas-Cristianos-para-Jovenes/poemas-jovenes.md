@@ -12,7 +12,7 @@ tags:
   - poesía cristiana para jóvenes
   - fe y juventud
 
-featured: true
+featured: false
 
 pubDate: "2026-05-20T00:00:00Z"
 

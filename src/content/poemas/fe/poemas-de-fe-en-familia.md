@@ -8,7 +8,7 @@ tags:
   - familia creyente
   - fe en el hogar
   - herencia de fe
-featured: true
+featured: false
 pubDate: "2026-06-10T00:00:00Z"
 heroImage: "/images/fe.jpg"
 ---

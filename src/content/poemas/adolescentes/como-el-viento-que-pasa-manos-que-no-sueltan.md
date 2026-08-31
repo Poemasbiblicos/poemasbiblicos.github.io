@@ -13,7 +13,7 @@ tags:
   - fe en Dios
   - crecimiento espiritual
 
-featured: true
+featured: false
 
 pubDate: "2026-05-14T00:00:00Z"
 
@@ -126,3 +126,11 @@ Vive, pues, sin el miedo de que el tiempo te consuma,<br>
 vive pleno sabiendo que hay un Dios que te sostiene;<br>
 en Sus manos está escrito lo que tú aún no has leído,<br>
 y ese libro es más bello de lo que el ojo contiene.<br>
+
+---
+
+## Explorar más poemas
+
+- [Poemas Cristianos para Jóvenes](/poemas/poemas-cristianos-para-jovenes/)
+- [Poemas Cristianos para Reflexionar](/poemas/poemas-cristianos-para-reflexionar/)
+- [Poemas Cristianos de Fortaleza](/poemas/poemas-cristianos-de-fortaleza/)

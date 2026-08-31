@@ -1,5 +1,5 @@
 ---
-title: "Poemas Cristianos para Reflexionar"
+title: "Poemas Cristianos Profundos para Reflexionar | Tres meditaciones en verso"
 
 description: "Poemas cristianos de reflexión profunda sobre la vida, Dios, la fe y el propósito espiritual."
 
@@ -13,15 +13,15 @@ tags:
   - vida espiritual
   - pensamientos cristianos
 
-featured: true
+featured: false
 
 pubDate: "2026-05-14T00:00:00Z"
 
 heroImage: "/images/reflexion/reflexion1.jpg"
 ---
-# Poemas Cristianos para Reflexionar
+# Poemas Cristianos Profundos para Reflexionar
 
-Estos poemas cristianos para reflexionar invitan a mirar la vida, la fe y el propósito espiritual a la luz de Dios.
+Estos poemas cristianos profundos invitan a detenerse y a mirar la vida, la fe y el propósito espiritual a la luz de Dios.
 
 ## El Barro y la Mano
 
@@ -92,3 +92,11 @@ Confía en lo que crece sin testigos,<br>
 en el silencio verde que se labra;<br>
 los frutos más hermosos y más dignos<br>
 nacen donde nadie vio la palabra.<br>
+
+---
+
+## Explorar más poemas
+
+- [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe/)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza/)
+- [Poemas Cristianos Sobre La Familia](/poemas/poemas-cristianos-sobre-la-familia/)
