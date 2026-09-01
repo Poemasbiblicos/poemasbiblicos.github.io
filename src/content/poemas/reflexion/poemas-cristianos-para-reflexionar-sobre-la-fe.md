@@ -100,6 +100,6 @@ Los poemas para reflexionar sobre la fe cristiana verdadera son necesarios porqu
 
 ## Explorar más poemas
 
-- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza)
-- [Poemas Cristianos de Fortaleza](/poemas/poemas-cristianos-de-fortaleza)
-- [Poemas Cristianos para Reflexionar](/poemas/poemas-cristianos-para-reflexionar)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza/)
+- [Poemas Cristianos de Fortaleza](/poemas/poemas-cristianos-de-fortaleza/)
+- [Poemas Cristianos para Reflexionar](/poemas/poemas-cristianos-para-reflexionar/)

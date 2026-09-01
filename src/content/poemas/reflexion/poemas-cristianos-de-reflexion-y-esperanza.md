@@ -98,6 +98,6 @@ Los poemas de reflexión y esperanza cristiana son necesarios porque la fe auté
 
 ## Explorar más poemas
 
-- [Poemas Cristianos para Reflexionar](/poemas/poemas-cristianos-para-reflexionar)
-- [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe)
-- [Poemas Cristianos de Fortaleza](/poemas/poemas-cristianos-de-fortaleza)
+- [Poemas Cristianos para Reflexionar](/poemas/poemas-cristianos-para-reflexionar/)
+- [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe/)
+- [Poemas Cristianos de Fortaleza](/poemas/poemas-cristianos-de-fortaleza/)

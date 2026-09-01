@@ -99,6 +99,6 @@ Reflexionar y pensar desde la fe cristiana es un ejercicio de humildad y apertur
 
 ## Explorar más poemas
 
-- [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe)
-- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza)
-- [Poemas Cristianos para Reflexionar sobre la Vida](/poemas/poemas-cristianos-para-reflexionar)
+- [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe/)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza/)
+- [Poemas Cristianos para Reflexionar sobre la Vida](/poemas/poemas-cristianos-para-reflexionar/)

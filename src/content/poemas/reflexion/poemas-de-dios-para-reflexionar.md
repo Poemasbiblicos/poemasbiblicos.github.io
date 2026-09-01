@@ -99,6 +99,6 @@ Los poemas de Dios para reflexionar nos recuerdan que la grandeza divina no inti
 
 ## Explorar más poemas
 
-- [Poemas Bíblicos de Amor](/poemas/poemas-biblicos-de-amor)
-- [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe)
-- [Poemas Cristianos para Reflexionar sobre la Vida](/poemas/poemas-cristianos-para-reflexionar)
+- [Poemas Bíblicos de Amor](/poemas/poemas-biblicos-de-amor/)
+- [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe/)
+- [Poemas Cristianos para Reflexionar sobre la Vida](/poemas/poemas-cristianos-para-reflexionar/)

@@ -99,6 +99,6 @@ Los poemas para reflexionar sobre el amor cristiano nos devuelven siempre al mis
 
 ## Explorar más poemas
 
-- [Poemas Cristianos para Reflexionar](/poemas/poemas-cristianos-para-reflexionar)
-- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza)
-- [Poemas Bíblicos de Amor para la Mujer](/poemas/poemas-cristianos-para-la-mujer)
+- [Poemas Cristianos para Reflexionar](/poemas/poemas-cristianos-para-reflexionar/)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza/)
+- [Poemas Bíblicos de Amor para la Mujer](/poemas/poemas-cristianos-para-la-mujer/)

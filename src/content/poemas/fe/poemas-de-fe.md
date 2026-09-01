@@ -17,7 +17,7 @@ featured: false
 
 pubDate: "2026-05-14T00:00:00Z"
 
-heroImage: "/images/fortaleza.jpg"
+heroImage: "/images/fe.jpg"
 ---
 # Poemas de Fe en Dios
 

@@ -75,6 +75,6 @@ Los poemas cortos para reflexionar con fe cristiana son semillas: pequeñas en t
 
 ## Explorar más poemas
 
-- [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe)
-- [Poemas Bíblicos de Amor](/poemas/poemas-biblicos-de-amor)
-- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza)
+- [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe/)
+- [Poemas Bíblicos de Amor](/poemas/poemas-biblicos-de-amor/)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza/)

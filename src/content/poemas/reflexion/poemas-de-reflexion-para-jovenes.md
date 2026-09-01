@@ -98,6 +98,6 @@ Los poemas de reflexión para jóvenes creyentes nacen de la convicción de que 
 
 ## Explorar más poemas
 
-- [Poemas Cristianos Para Adolescentes](/poemas/poemas-cristianos-para-adolescentes)
-- [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe)
-- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza)
+- [Poemas Cristianos Para Adolescentes](/poemas/poemas-cristianos-para-adolescentes/)
+- [Poemas Cristianos de Fe](/poemas/poemas-cristianos-de-fe/)
+- [Poemas Cristianos de Esperanza](/poemas/poemas-cristianos-de-esperanza/)

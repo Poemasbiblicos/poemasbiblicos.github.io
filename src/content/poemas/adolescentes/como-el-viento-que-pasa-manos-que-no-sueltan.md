@@ -1,5 +1,5 @@
 ---
-title: "Como el Viento que Pasa"
+title: "Poemas Cristianos para Adolescentes | Como el viento que pasa"
 
 description: "Poemas cristianos para adolescentes sobre identidad, emociones y crecimiento espiritual."
 
