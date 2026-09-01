@@ -1,0 +1,66 @@
+---
+import { getCollection } from 'astro:content';
+
+const poemas = await getCollection('poemas');
+
+const latestPoemas = poemas
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+  .slice(0, 6);
+
+const formatDate = (date: Date) =>
+  date.toLocaleDateString('es-ES', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  });
+---
+
+<section
+  class="section latest-section"
+  id="ultimos"
+  aria-labelledby="latest-title"
+>
+  <div class="container">
+
+    <div class="section-heading">
+      <p class="section-kicker">
+        Recién publicados
+      </p>
+
+      <h2
+        class="section-title"
+        id="latest-title"
+      >
+        Últimos poemas
+      </h2>
+    </div>
+
+    <div class="latest-grid">
+
+      {latestPoemas.map((poema) => (
+        <a
+          href={`/poemas/${poema.id.split("/").pop()}/`}
+          class="latest-card"
+        >
+          <span class="latest-category">
+            {poema.data.category}
+          </span>
+
+          <h3>
+            {poema.data.title.split('|')[0].trim()}
+          </h3>
+
+          <p>
+            {poema.data.description}
+          </p>
+
+          <time datetime={poema.data.pubDate.toISOString()}>
+            {formatDate(poema.data.pubDate)}
+          </time>
+        </a>
+      ))}
+
+    </div>
+  </div>
+</section>
