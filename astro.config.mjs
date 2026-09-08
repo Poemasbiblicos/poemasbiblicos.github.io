@@ -56,15 +56,12 @@ export default defineConfig({
   integrations: [
     sitemap({
       entryLimit: 10000,
+      // las URLs antiguas solo redirigen: no deben figurar en el sitemap
+      filter: (page) =>
+        !/\/poemas\/(poemas-de-fortaleza|poems-for-mothers-day|poemas-cristianos-esperanza)\//.test(page),
     })
   ],
   trailingSlash: 'always',
-
-  redirects: {
-    '/poemas/poemas-de-fortaleza/': '/poemas/poemas-cristianos-de-fortaleza/',
-    '/poemas/poems-for-mothers-day/': '/poemas/biblical-poems-for-mothers-day/',
-    '/poemas/poemas-cristianos-esperanza/': '/poemas/poemas-cristianos-de-esperanza/',
-  },
 
   markdown: {
     rehypePlugins: [agruparEstrofas],

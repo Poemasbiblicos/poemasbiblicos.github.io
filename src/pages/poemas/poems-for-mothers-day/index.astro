@@ -1,0 +1,20 @@
+---
+// Redireccion de URL antigua. Sin noindex a proposito: se quiere que Google
+// rastree la pagina, siga la redireccion y consolide las senales en el destino.
+const destino = "/poemas/biblical-poems-for-mothers-day/";
+const canonical = "https://poemasbiblicos.github.io/poemas/biblical-poems-for-mothers-day/";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirigiendo a Poemas Biblicos</title>
+    <meta http-equiv="refresh" content={`0;url=${destino}`} />
+    <link rel="canonical" href={canonical} />
+  </head>
+  <body>
+    <p>Esta pagina se ha movido. <a href={destino}>Continuar</a>.</p>
+  </body>
+</html>
