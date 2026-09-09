@@ -140,7 +140,11 @@ const RECORTES = ["attention", "centre", "top", "entropy"];
 
       const base = await sharp(fs.readFileSync(fondo))
         .resize(W, H, { fit: "cover", position: recorte }).toBuffer();
-      const out = path.join(SALIDA, `${slug}-${i + 1}.png`);
+      // cada pin va a la subcarpeta de su tablero, para subirlos por bloques
+      const carpetaTablero = p.categoria.replace(/[\/:*?"<>|]/g, "");
+      const dir = path.join(SALIDA, carpetaTablero);
+      fs.mkdirSync(dir, { recursive: true });
+      const out = path.join(dir, `${slug}-${i + 1}.png`);
       await sharp(base)
         .composite([{ input: svgPin({ titulo: p.h1, categoria: p.categoria,
             versos: elegidas[i].versos.slice(0, 4), subtitulo: elegidas[i].subtitulo, velo }) }])
