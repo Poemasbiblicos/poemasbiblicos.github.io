@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { contenidoCategorias } from "../../data/categorias.js";
 
 const getCategorySlug = (category) =>
   category
@@ -60,9 +61,18 @@ const paginationPages = Array.from(
   (_, index) => index + 1
 );
 
-const pageTitle = `${category} | Poemas Bíblicos`;
+const editorial = contenidoCategorias[categorySlug];
+
+const pageTitle = editorial?.title ?? `${category} | Poemas Bíblicos`;
 
 const pageDescription =
+  editorial?.description ??
+  `Explora ${category.toLowerCase()} llenos de fe, esperanza y reflexión cristiana.`;
+
+const kicker = editorial?.kicker ?? "Categoría";
+
+const intro =
+  editorial?.intro ??
   `Explora ${category.toLowerCase()} llenos de fe, esperanza y reflexión cristiana.`;
 ---
 
@@ -76,7 +86,7 @@ const pageDescription =
 
       <div class="section-heading">
         <p class="section-kicker">
-          Categoría
+          {kicker}
         </p>
 
         <h1 class="section-title">
@@ -84,7 +94,7 @@ const pageDescription =
         </h1>
 
         <p class="section-description">
-          {pageDescription}
+          {intro}
         </p>
       </div>
 
@@ -153,6 +163,22 @@ const pageDescription =
 
     </div>
   </section>
-  
+
+  {editorial?.secciones && (
+    <section class="section pillar-intro">
+      <div class="container">
+        <div class="pillar-copy">
+          {editorial.secciones.map((bloque) => (
+            <Fragment>
+              <h2>{bloque.titulo}</h2>
+              {bloque.parrafos.map((parrafo) => (
+                <p set:html={parrafo} />
+              ))}
+            </Fragment>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 
 </BaseLayout>
