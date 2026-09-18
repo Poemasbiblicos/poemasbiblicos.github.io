@@ -74,7 +74,7 @@ pero siempre se sienta a nuestra mesa.<br>
 
 ## Versos sobre orar
 
-Estos versos sobre la oración pueden acompañar un devocional o abrir un tiempo de silencio: la poesía y la plegaria comparten el mismo respirar.
+Estos versos sobre la oración pueden acompañar un devocional o abrir un tiempo de silencio: la poesía y la plegaria comparten el mismo respirar. Para leer en voz alta ante otros, hay [poemas religiosos](/poemas/poemas-religiosos/) pensados para la comunidad.
 
 ---
 

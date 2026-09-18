@@ -76,7 +76,7 @@ para encontrar tu nombre escrito adentro.<br>
 
 ## Versos del salterio para orar y meditar
 
-Llevar los salmos a verso propio no es reescribir la Escritura, sino aprenderla de memoria por otro camino: el de la música que ya traían.
+Llevar los salmos a verso propio no es reescribir la Escritura, sino aprenderla de memoria por otro camino: el de la música que ya traían. Esa misma vocación de cantar juntos late en los [poemas religiosos](/poemas/poemas-religiosos/) escritos para la congregación.
 
 ---
 
