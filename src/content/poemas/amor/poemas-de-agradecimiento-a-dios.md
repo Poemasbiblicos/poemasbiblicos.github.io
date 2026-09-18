@@ -84,7 +84,7 @@ y en eso, no en mi fuerza, está mi fuerza.<br>
 
 ## Poemas para agradecer a Dios
 
-Estos poemas de gratitud pueden leerse al terminar el día, como un inventario en voz alta de todo lo que se recibió sin merecerlo.
+Estos poemas de gratitud pueden leerse al terminar el día, como un inventario en voz alta de todo lo que se recibió sin merecerlo. Y si quieres seguir contemplando al Creador más allá de la gratitud, aquí hay más [poemas sobre Dios](/poemas/poemas-sobre-dios/).
 
 ---
 

@@ -3,7 +3,7 @@ title: "Poemas de Dios para Reflexionar | Versos que contemplan el misterio divi
 description: "Poemas de Dios para reflexionar: versos bíblicos que se asoman al misterio de lo divino con imágenes sensoriales, hondura teológica y belleza literaria genuina."
 category: "Poemas Cristianos para Reflexionar"
 tags:
-  - poemas de Dios
+  - poemas de Dios para reflexionar
   - reflexión sobre Dios
   - poemas bíblicos
   - misterio divino
@@ -91,9 +91,9 @@ abierto para quien el alma escudriña y cuida.<br>
 
 ---
 
-## Poemas sobre Dios para reflexionar en su amor eterno
+## Versos para reflexionar en el amor eterno del Padre
 
-Los poemas de Dios para reflexionar nos recuerdan que la grandeza divina no intimida, sino que desciende: esa es la paradoja que los versos bíblicos no terminan de agotar.
+Los poemas de Dios para reflexionar nos recuerdan que la grandeza divina no intimida, sino que desciende: esa es la paradoja que los versos bíblicos no terminan de agotar. Si buscas una mirada más amplia al Creador, encontrarás más [poemas sobre Dios](/poemas/poemas-sobre-dios/) reunidos aparte.
 
 ---
 

@@ -6,6 +6,8 @@ tags:
   - poemas sobre Dios
   - poemas de Dios
   - poemas a Dios
+  - poemas de Dios bonitos
+  - poemas de Dios cortos
   - versos al Creador
   - contemplación cristiana
 featured: false
@@ -64,6 +66,43 @@ No promete que el viento no me alcance,<br>
 promete que la roca no se parte;<br>
 y aprendo que la fe no es tener techo,<br>
 sino tener cimiento en el desastre.<br>
+
+---
+
+## Poemas de Dios bonitos para empezar el día
+
+*Antes del ruido*
+
+Antes de que el día tenga su ruido,<br>
+cuando aún la casa duerme su tibieza,<br>
+hay un instante en que el alma reconoce<br>
+de quién ha sido siempre la certeza.<br>
+
+No pido para hoy camino llano,<br>
+ni el peso de las cosas apartado;<br>
+pido saber que vas delante mío<br>
+con ese paso tuyo, acostumbrado.<br>
+
+Y si la tarde llega y no he podido,<br>
+si el día se deshace y queda a medias,<br>
+bastará con saber que Tú seguías<br>
+sosteniendo el lugar donde me esperas.<br>
+
+---
+
+## Poemas de Dios cortos para orar
+
+*Tres líneas y una puerta*
+
+Señor, no tengo hoy palabras claras;<br>
+te traigo las de ayer, desordenadas,<br>
+y ese silencio mío que Tú entiendes<br>
+mejor que las razones bien armadas.<br>
+
+Toma lo poco: cabe en una mano,<br>
+y sabe a pan del día y a descanso;<br>
+no sé rezar más hondo, pero vengo,<br>
+y venir ya es la forma de mi canto.<br>
 
 ---
 
