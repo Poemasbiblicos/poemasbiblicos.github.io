@@ -18,26 +18,30 @@ Estos son los del 18/09, rango 28 días:
 | Impresiones | 7.010 |
 | CTR | 3,4 % |
 | Posición media | 7 |
-**Posiciones reales en vivo (comprobadas en incógnito el 18/09).** La posición media
-de Search Console es un promedio y NO es el ranking real: compruébalas tú.
 
-| "poemas biblicos" (sin tilde) | página 1, **2.º orgánico** |
-| "poemas bíblicos" (con tilde) | página 2, ~#8 |
-| "poemas cristianos" | página 1, #5 |
+**Posiciones reales en vivo**, comprobadas en incógnito el 18/09. La posición media de
+Search Console es un promedio de todas las impresiones y NO es el ranking real:
 
-### 0.2 El gancho, corregido
+| Consulta | Dónde sales de verdad |
+|---|---|
+| poemas biblicos (sin tilde) | Página 1, **2.º resultado orgánico** |
+| poemas bíblicos (con tilde) | Página 2, ~#8 |
+| poemas cristianos | Página 1, #5 |
 
-**NO digas** "segunda posición". Solo es cierto con tilde.
+### 0.2 El gancho
 
-Di esto, que es verdad en cualquier variante y se puede comprobar:
+Puedes decir **"segundo resultado"** con total tranquilidad: es lo que sale en vivo
+buscando "poemas biblicos".
 
-> "Esta página está en la primera página de Google compitiendo por 'poemas cristianos',
-> que tiene casi mil impresiones al mes. Y no he pagado ni un solo peso:
-> ni hosting, ni dominio, ni plantillas, ni plugins. Cero.
+> "Esta página es el segundo resultado de Google cuando buscas 'poemas bíblicos'.
+> Y no he pagado ni un solo peso: ni hosting, ni dominio, ni plantillas, ni plugins. Cero.
 > Ahora te enseño exactamente cómo, y también por qué probablemente tú no deberías hacerlo así."
 
-Si al grabar la búsqueda en directo sales en un puesto muy bueno, **dilo en ese momento
-señalando la pantalla**. Que el dato salga de la grabación y no de tu promesa previa.
+**Dilo señalando la pantalla mientras corre T1.** Que el dato salga de la grabación.
+
+> [Matiz que suma] Por encima de ti hay un bloque de imágenes y un resumen de IA.
+> Decirlo en voz alta —"soy segundo, pero mira todo lo que hay antes de mí"— te hace
+> más creíble y de paso introduce por qué hoy estar arriba ya no basta.
 
 ### 0.3 Privacidad — revisa esto o te arrepientes
 
@@ -56,8 +60,8 @@ Graba en silencio y seguido. La voz se pone después. Así no repites tomas por 
 
 | # | Toma | Qué haces exactamente | Dura |
 |---|---|---|---|
-| T1 | **La prueba** | Ventana de incógnito → buscar `poemas cristianos` → scroll lento hasta tu resultado → parar ahí | 25 s |
-| T2 | **La prueba 2** | Incógnito → `poemas bíblicos` → scroll hasta el resultado | 20 s |
+| T1 | **La prueba** | Incógnito → `poemas biblicos` (SIN tilde) → scroll lento hasta tu resultado, el 2.º orgánico → parar ahí | 25 s |
+| T2 | **La prueba 2** | Incógnito → `poemas cristianos` → scroll hasta tu resultado, el #5 | 20 s |
 | T3 | **El planificador** | Planificador de Palabras Clave con la columna de pujas del nicho de poemas casi vacía | 15 s |
 | T4 | **El repositorio** | GitHub, vista del repo, scroll por las carpetas | 15 s |
 | T5 | **El workflow** | Abrir `.github/workflows/deploy.yml`, scroll lento | 15 s |
