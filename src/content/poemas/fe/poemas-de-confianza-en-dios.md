@@ -81,6 +81,8 @@ es que estás preparando lo que aguardo.<br>
 
 Estos versos de confianza pueden leerse en voz alta cuando la ansiedad aprieta: la fe no elimina la tormenta, pero cambia de manos el timón. Confiar es más fácil cuando se conoce a quien sostiene: estos [poemas sobre Dios](/poemas/poemas-sobre-dios/) ayudan a mirarlo de cerca, y estos [poemas religiosos](/poemas/poemas-religiosos/) reúnen los que se leen en comunidad.
 
+«Si tardas, no es que te hayas olvidado» es fácil de escribir en verso y difícil de sostener a los seis meses de espera. Para eso está este devocional sobre [cuando Dios parece llegar tarde](https://jovencristiano.github.io/devocionales/cuando-dios-parece-llegar-tarde/), que no promete que toda historia acabe bien.
+
 ---
 
 ## Explorar más poemas

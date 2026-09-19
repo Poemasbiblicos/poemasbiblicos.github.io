@@ -76,6 +76,8 @@ pero siempre se sienta a nuestra mesa.<br>
 
 Estos versos sobre la oración pueden acompañar un devocional o abrir un tiempo de silencio: la poesía y la plegaria comparten el mismo respirar. Para leer en voz alta ante otros, hay [poemas religiosos](/poemas/poemas-religiosos/) pensados para la comunidad.
 
+Y para los días en que se ora sin sentir nada —que son más de los que se confiesan—, este devocional sobre [cuando no sientes nada al orar](https://jovencristiano.github.io/devocionales/cuando-no-sientes-nada-al-orar/) lo dice sin adornos.
+
 ---
 
 ## Explorar más poemas

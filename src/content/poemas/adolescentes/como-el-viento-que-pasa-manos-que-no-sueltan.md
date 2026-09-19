@@ -129,6 +129,12 @@ y ese libro es más bello de lo que el ojo contiene.<br>
 
 ---
 
+## Para leer a solas
+
+Este poema está escrito para el adolescente que se siente de paso en todo. Si el poema abre la puerta y quedan ganas de seguir, estos [devocionales para jóvenes](https://jovencristiano.github.io/devocionales/) son lecturas de cinco minutos pensadas para leerse igual: en silencio y sin nadie delante.
+
+---
+
 ## Explorar más poemas
 
 - [Poemas Cristianos para Jóvenes](/poemas/poemas-cristianos-para-jovenes/)

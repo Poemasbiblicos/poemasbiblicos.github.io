@@ -92,6 +92,8 @@ tu nombre en su boca. Su boca en tu vida.<br>
 
 Estos poemas cristianos para jóvenes nacen de las Escrituras para hablarle al corazón que busca, duda y cree con igual intensidad.
 
+Detrás de casi todos late la misma pregunta: qué significa de verdad [ser un joven cristiano](https://jovencristiano.github.io/temas/que-significa-ser-joven-cristiano/) cuando nadie está mirando. Un poema la deja en el aire; esa lectura intenta responderla sin idealizar nada.
+
 ---
 
 ## Explorar más poemas
