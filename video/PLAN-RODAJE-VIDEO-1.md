@@ -18,9 +18,12 @@ Estos son los del 18/09, rango 28 días:
 | Impresiones | 7.010 |
 | CTR | 3,4 % |
 | Posición media | 7 |
-| "poemas cristianos" | pos. 5,4 · 973 impresiones |
-| "poemas biblicos" (sin tilde) | pos. 7,3 |
-| "poemas bíblicos" (con tilde) | pos. 2,8 |
+**Posiciones reales en vivo (comprobadas en incógnito el 18/09).** La posición media
+de Search Console es un promedio y NO es el ranking real: compruébalas tú.
+
+| "poemas biblicos" (sin tilde) | página 1, **2.º orgánico** |
+| "poemas bíblicos" (con tilde) | página 2, ~#8 |
+| "poemas cristianos" | página 1, #5 |
 
 ### 0.2 El gancho, corregido
 

@@ -8,8 +8,7 @@ decirlo en voz alta en el minuto del afiliado y ponerlo en la primera línea de 
 
 ## 0:00–0:20 · GANCHO (sin intro, sin logo, directo)
 
-> "Esta página está en la primera página de Google compitiendo por 'poemas cristianos',
-> que tiene casi mil impresiones al mes.
+> "Esta página es el segundo resultado de Google cuando buscas 'poemas bíblicos'.
 > Y no he pagado ni un solo peso: ni hosting, ni dominio, ni plantillas, ni plugins. Cero.
 > Ahora te voy a enseñar exactamente cómo, y también por qué probablemente tú no deberías hacerlo así."
 
@@ -76,9 +75,14 @@ Datos del 18/09/2026, rango 28 días. **Revalídalos la mañana de la grabación
 - "poemas cristianos": posición 5,4 con 973 impresiones
 - "poemas bíblicos": posición 2,8 con tilde, 7,3 sin tilde
 
-> [Honestidad] Di la posición con tilde SOLO si aclaras que es la variante acentuada.
-> Si la das a secas, cualquiera que busque sin tilde te ve en la séptima y pierdes
-> la credibilidad del vídeo entero.
+Posiciones REALES comprobadas en vivo el 18/09 (la posición media de Search Console
+es un promedio y no coincide con el ranking real):
+
+- "poemas biblicos" sin tilde: **página 1, 2.º resultado orgánico**
+- "poemas bíblicos" con tilde: página 2, ~#8
+- "poemas cristianos": página 1, #5
+
+> [Honestidad] Comprueba las tres en incógnito la mañana de grabar y di lo que veas.
 
 > "No son millones. Es un proyecto de cuatro meses, en un nicho pequeño.
 > Pero está en primera página compitiendo contra dominios de veinte años. Con cero pesos."
