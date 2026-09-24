@@ -156,7 +156,24 @@ const RECORTES = ["attention", "centre", "top", "entropy"];
   fs.mkdirSync(destinoRaiz, { recursive: true });
   const pool = bancoDeFondos();
   const vistos = new Set();
+  // la imagen propia de la categoria se usa UNA vez por tablero; el resto rota
+  // por todo el banco, para que dentro de un tablero no se repita el fondo
+  const usadaPropia = new Set();
   let n = 0, k = 0;
+
+  // Nombres de carpeta "NN - Categoria (N pines)": el CSV del calendario los usa.
+  const cuenta = {};
+  for (const f of files) {
+    const p = leerPoema(f);
+    const nPines = p.estrofas.filter((e) => e.versos.length >= 3).slice(0, 3).length;
+    cuenta[p.categoria] = (cuenta[p.categoria] || 0) + nPines;
+  }
+  const orden = Object.entries(cuenta).sort((a, b) => b[1] - a[1]).map(([c]) => c);
+  const nombreCarpeta = (cat) => {
+    const i = orden.indexOf(cat) + 1;
+    const limpio = cat.replace(/[\/:*?"<>|]/g, "");
+    return `${String(i).padStart(2, "0")} - ${limpio} (${cuenta[cat]} pines)`;
+  };
 
   for (const f of files) {
     const slug = path.basename(f, ".md");
@@ -172,7 +189,9 @@ const RECORTES = ["attention", "centre", "top", "entropy"];
     if (soloMuestras && elegidas.length) vistos.add(p.categoria);
 
     for (let i = 0; i < elegidas.length; i++) {
-      const fondo = i === 0 && fs.existsSync(propia) ? propia : pool[k % pool.length];
+      const primeraDeTablero = i === 0 && !usadaPropia.has(p.categoria);
+      const fondo = primeraDeTablero && fs.existsSync(propia) ? propia : pool[k % pool.length];
+      if (primeraDeTablero && fs.existsSync(propia)) usadaPropia.add(p.categoria);
       if (!fs.existsSync(fondo)) continue;
       const recorte = RECORTES[k % RECORTES.length];
       const velo = VELOS[k % VELOS.length];
@@ -181,7 +200,9 @@ const RECORTES = ["attention", "centre", "top", "entropy"];
       const base = await sharp(fs.readFileSync(fondo))
         .resize(W, H, { fit: "cover", position: recorte }).toBuffer();
 
-      const carpeta = p.categoria.replace(/[\/:*?"<>|]/g, "");
+      const carpeta = soloMuestras
+        ? p.categoria.replace(/[\/:*?"<>|]/g, "")
+        : nombreCarpeta(p.categoria);
       const dir = soloMuestras ? destinoRaiz : path.join(destinoRaiz, carpeta);
       fs.mkdirSync(dir, { recursive: true });
       const out = soloMuestras
