@@ -1,20 +1,29 @@
 /**
  * Genera pines de Pinterest (1000x1500) a partir de los poemas del sitio.
- * Uso:  node pinterest/generar-pines.js [slug-del-poema]   (sin argumento: todos)
+ *
+ * Cada tablero tiene su propio diseno (tipografias y ornamento lateral propios),
+ * definido en estilos.cjs. Toda la familia comparte la misma gama de color.
+ *
+ * Uso:
+ *   node pinterest/generar-pines.cjs                  -> todos los pines
+ *   node pinterest/generar-pines.cjs slug-del-poema   -> solo ese poema
+ *   node pinterest/generar-pines.cjs --muestras       -> 1 pin por tablero, en pinterest/muestras
  */
 const sharp = require("sharp");
 const fs = require("fs");
 const path = require("path");
+const { ORNAMENTOS, CREMA, CREMA_2, estiloDe } = require("./estilos.cjs");
 
 const W = 1000, H = 1500;
 const SALIDA = "pinterest/pines";
-const SERIF = "Georgia, 'Times New Roman', serif";
 const SANS = "Segoe UI, Arial, sans-serif";
 const DOMINIO = "poemasbiblicos.github.io";
 
+// margen interior del texto: deja libres las bandas laterales del ornamento
+const ANCHO_TEXTO = 720;
+
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-// parte un verso largo en varias lineas segun ancho aproximado
 function envolver(texto, maxChars) {
   const palabras = texto.split(" ");
   const lineas = []; let actual = "";
@@ -39,13 +48,15 @@ function leerPoema(file) {
     return "";
   };
   const h1 = (cuerpo.match(/^# (.+)$/m) || [])[1] || campo("title");
-  // estrofas: bloques consecutivos de versos terminados en <br>
   const estrofas = [];
   let bloque = [], subtitulo = "";
-  const subs = {};
   for (const linea of cuerpo.split(/\r?\n/)) {
     const s = linea.trim();
-    if (/^\*[^*].*\*$/.test(s)) subtitulo = s.replace(/^\*|\*$/g, "");
+    if (/^\*[^*].*\*$/.test(s)) {
+      const cand = s.replace(/^\*|\*$/g, "");
+      // descarta notas editoriales: no son subtitulos poeticos
+      if (!/Actitud l[ií]rica|Temple de [aá]nimo/i.test(cand)) subtitulo = cand;
+    }
     if (s.endsWith("<br>")) bloque.push(s.replace(/<br>$/, "").trim());
     else if (bloque.length) { estrofas.push({ versos: bloque, subtitulo }); bloque = []; }
   }
@@ -53,49 +64,65 @@ function leerPoema(file) {
   return { h1, categoria: campo("category"), imagen: campo("heroImage"), estrofas };
 }
 
-function svgPin({ titulo, categoria, versos, subtitulo, velo }) {
-  const V = velo || VELOS[0];
-  const tit = envolver(titulo, 22);
-  const yTit = 310;
+function svgPin({ titulo, versos, subtitulo, velo, estilo }) {
+  const acento = estilo.acento;
+
+  // ---- titulo
+  const escalaTit = estilo.tituloEscala || 1;
+  const tamTit = Math.round(62 * escalaTit);
+  const tit = envolver(titulo, Math.round(23 / escalaTit));
+  const yTit = 300;
+  const espaciado = estilo.versalita ? 3 : 0;
   const lineasTit = tit.map((l, i) =>
-    `<text x="${W/2}" y="${yTit + i*76}" text-anchor="middle" font-family="${SERIF}" font-size="66" font-weight="bold" fill="#ffffff">${esc(l)}</text>`).join("");
+    `<text x="${W / 2}" y="${yTit + i * Math.round(tamTit * 1.16)}" text-anchor="middle"
+       font-family="${estilo.titulo}" font-size="${tamTit}" font-weight="bold"
+       letter-spacing="${espaciado}" fill="${CREMA}">${esc(estilo.versalita ? l.toUpperCase() : l)}</text>`).join("");
+  const finTit = yTit + (tit.length - 1) * Math.round(tamTit * 1.16);
 
-  // cuerpo adaptativo: el verso mas largo decide el tamano, para que casi ninguno se parta
-  const masLargo = Math.max(...versos.map(v => v.length));
+  // ---- versos, con tamano adaptado al verso mas largo
+  const masLargo = Math.max(...versos.map((v) => v.length));
   const fs_ = masLargo <= 40 ? 37 : masLargo <= 48 ? 34 : masLargo <= 56 ? 30 : 27;
-  const maxCh = Math.floor(840 / (fs_ * 0.46));
+  const maxCh = Math.floor(ANCHO_TEXTO / (fs_ * 0.46));
   const salto = Math.round(fs_ * 1.62);
-
-  const versosEnv = versos.flatMap(v => envolver(v, maxCh));
+  const versosEnv = versos.flatMap((v) => envolver(v, maxCh));
   const alto = versosEnv.length * salto;
-  const yV = 790 - alto/2;
+  const yV = 820 - alto / 2;
   const lineasV = versosEnv.map((l, i) =>
-    `<text x="${W/2}" y="${yV + i*salto}" text-anchor="middle" font-family="${SERIF}" font-size="${fs_}" font-style="italic" fill="#fdf6e8">${esc(l)}</text>`).join("");
+    `<text x="${W / 2}" y="${yV + i * salto}" text-anchor="middle" font-family="${estilo.versos}"
+       font-size="${fs_}" font-style="italic" fill="${CREMA}">${esc(l)}</text>`).join("");
 
-  const ySub = yV + alto + 100;
+  const ySub = yV + alto + 96;
   const sub = subtitulo
-    ? `<text x="${W/2}" y="${ySub}" text-anchor="middle" font-family="${SERIF}" font-size="27" font-style="italic" letter-spacing="1" fill="#dcbd85">${esc(subtitulo)}</text>` : "";
+    ? `<text x="${W / 2}" y="${ySub}" text-anchor="middle" font-family="${estilo.versos}"
+         font-size="27" font-style="italic" letter-spacing="1" fill="${acento}">${esc(subtitulo)}</text>` : "";
+
+  // ---- ornamento lateral, espejado a la derecha
+  const orn = ORNAMENTOS[estilo.ornamento] || ORNAMENTOS.filete;
+  const banda = orn(finTit + 90, Math.max(ySub, yV + alto) + 70, acento);
+  const ornamentos = `
+    <g>${banda}</g>
+    <g transform="translate(${W},0) scale(-1,1)">${banda}</g>`;
 
   return Buffer.from(`<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="v" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="${V.tinte}" stop-opacity="${V.a}"/>
-      <stop offset="42%"  stop-color="${V.tinte}" stop-opacity="${V.b}"/>
-      <stop offset="100%" stop-color="${V.tinte}" stop-opacity="${V.c}"/>
+      <stop offset="0%"   stop-color="${estilo.tinte}" stop-opacity="${velo.a}"/>
+      <stop offset="42%"  stop-color="${estilo.tinte}" stop-opacity="${velo.b}"/>
+      <stop offset="100%" stop-color="${estilo.tinte}" stop-opacity="${velo.c}"/>
     </linearGradient>
   </defs>
   <rect width="${W}" height="${H}" fill="url(#v)"/>
-  <rect x="${W/2-45}" y="200" width="90" height="2" fill="#e8c88a"/>
+  <rect x="${W / 2 - 45}" y="196" width="90" height="2" fill="${acento}"/>
   ${lineasTit}
-  <rect x="${W/2-38}" y="${yV-90}" width="76" height="1" fill="rgba(232,200,138,.55)"/>
+  ${ornamentos}
   ${lineasV}
   ${sub}
-  <rect x="${W/2-38}" y="1330" width="76" height="1" fill="rgba(232,200,138,.55)"/>
-  <text x="${W/2}" y="1395" text-anchor="middle" font-family="${SANS}" font-size="26" letter-spacing="4" fill="#f0e3cc">${DOMINIO}</text>
+  <rect x="${W / 2 - 38}" y="1330" width="76" height="1" fill="${acento}" opacity=".55"/>
+  <text x="${W / 2}" y="1395" text-anchor="middle" font-family="${SANS}" font-size="26"
+    letter-spacing="4" fill="${CREMA_2}">${DOMINIO}</text>
 </svg>`);
 }
 
-// banco de fondos: todas las imagenes salvo las de proposito especial
 function bancoDeFondos() {
   const pool = [];
   for (const d of ["public/images", "public/images/reflexion"])
@@ -105,33 +132,46 @@ function bancoDeFondos() {
   return pool;
 }
 
-// tres tratamientos de velo para que un mismo fondo no se repita igual
 const VELOS = [
-  { a: 0.86, b: 0.60, c: 0.90, tinte: "#241a0e" },
-  { a: 0.80, b: 0.52, c: 0.88, tinte: "#1d1710" },
-  { a: 0.88, b: 0.66, c: 0.92, tinte: "#2b1d0d" },
+  { a: 0.86, b: 0.60, c: 0.90 },
+  { a: 0.80, b: 0.52, c: 0.88 },
+  { a: 0.88, b: 0.66, c: 0.92 },
 ];
 const RECORTES = ["attention", "centre", "top", "entropy"];
 
 (async () => {
-  const filtro = process.argv[2];
-  const files = [];
-  (function w(d){ for (const f of fs.readdirSync(d)) { const p = path.join(d,f);
-    fs.statSync(p).isDirectory() ? w(p) : f.endsWith(".md") && files.push(p); } })("src/content/poemas");
+  const arg = process.argv[2];
+  const soloMuestras = arg === "--muestras";
+  const filtro = soloMuestras ? null : arg;
+  const destinoRaiz = soloMuestras ? "pinterest/muestras" : SALIDA;
 
-  fs.mkdirSync(SALIDA, { recursive: true });
+  const files = [];
+  (function w(d) {
+    for (const f of fs.readdirSync(d)) {
+      const p = path.join(d, f);
+      fs.statSync(p).isDirectory() ? w(p) : f.endsWith(".md") && files.push(p);
+    }
+  })("src/content/poemas");
+
+  fs.mkdirSync(destinoRaiz, { recursive: true });
   const pool = bancoDeFondos();
+  const vistos = new Set();
   let n = 0, k = 0;
+
   for (const f of files) {
     const slug = path.basename(f, ".md");
     if (filtro && slug !== filtro) continue;
     const p = leerPoema(f);
-    const propia = path.join("public", p.imagen.replace(/^\//, ""));
 
-    // una estrofa de cada poema del articulo (max 3 pines por articulo)
-    const elegidas = p.estrofas.filter(e => e.versos.length >= 3).slice(0, 3);
+    // en modo muestras basta un pin por tablero
+    if (soloMuestras && vistos.has(p.categoria)) continue;
+
+    const estilo = estiloDe(p.categoria);
+    const propia = path.join("public", p.imagen.replace(/^\//, ""));
+    const elegidas = p.estrofas.filter((e) => e.versos.length >= 3).slice(0, soloMuestras ? 1 : 3);
+    if (soloMuestras && elegidas.length) vistos.add(p.categoria);
+
     for (let i = 0; i < elegidas.length; i++) {
-      // el primer pin usa la imagen de su categoria; los demas rotan por todo el banco
       const fondo = i === 0 && fs.existsSync(propia) ? propia : pool[k % pool.length];
       if (!fs.existsSync(fondo)) continue;
       const recorte = RECORTES[k % RECORTES.length];
@@ -140,17 +180,21 @@ const RECORTES = ["attention", "centre", "top", "entropy"];
 
       const base = await sharp(fs.readFileSync(fondo))
         .resize(W, H, { fit: "cover", position: recorte }).toBuffer();
-      // cada pin va a la subcarpeta de su tablero, para subirlos por bloques
-      const carpetaTablero = p.categoria.replace(/[\/:*?"<>|]/g, "");
-      const dir = path.join(SALIDA, carpetaTablero);
+
+      const carpeta = p.categoria.replace(/[\/:*?"<>|]/g, "");
+      const dir = soloMuestras ? destinoRaiz : path.join(destinoRaiz, carpeta);
       fs.mkdirSync(dir, { recursive: true });
-      const out = path.join(dir, `${slug}-${i + 1}.png`);
+      const out = soloMuestras
+        ? path.join(dir, `${carpeta}.png`)
+        : path.join(dir, `${slug}-${i + 1}.png`);
+
       await sharp(base)
-        .composite([{ input: svgPin({ titulo: p.h1, categoria: p.categoria,
-            versos: elegidas[i].versos.slice(0, 4), subtitulo: elegidas[i].subtitulo, velo }) }])
+        .composite([{ input: svgPin({
+          titulo: p.h1, versos: elegidas[i].versos.slice(0, 4),
+          subtitulo: elegidas[i].subtitulo, velo, estilo }) }])
         .png({ quality: 90 }).toFile(out);
       n++;
     }
   }
-  console.log("pines generados:", n, "->", SALIDA);
+  console.log(`pines generados: ${n} -> ${destinoRaiz}`);
 })();

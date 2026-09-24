@@ -20,7 +20,7 @@ heroImage: "/images/esperanza.jpg"
 
 ## I. El ancla en la niebla
 
-*Actitud lírica: meditativa · Temple de ánimo: sereno y expectante*
+*Lo que aguanta en lo hondo*
 
 Hay una voz que suena antes del alba,<br>
 anterior al rocío y a la piedra,<br>
@@ -46,7 +46,7 @@ silencios donde habita lo eterno.<br>
 
 ## II. Semilla bajo el hielo
 
-*Actitud lírica: efusiva · Temple de ánimo: tenso y luminoso*
+*Debajo del invierno*
 
 Debajo del invierno que no cede,<br>
 donde el suelo guarda su silencio de hierro,<br>
@@ -72,7 +72,7 @@ ya vio en la semilla el campo en flor, el lirio.<br>
 
 ## III. Lo que el río sabe
 
-*Actitud lírica: canción · Temple de ánimo: ardiente y manso*
+*La paciencia del agua*
 
 El río no pregunta si llegará,<br>
 dobla en la roca y sigue su corriente;<br>

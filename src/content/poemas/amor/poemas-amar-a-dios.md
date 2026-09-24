@@ -26,7 +26,7 @@ heroImage: "/images/amar-a-dios.jpg"
 
 ## I. El nombre que arde en la lengua
 
-*Actitud lírica: efusiva · Temple de ánimo: ardiente y contemplativo*
+*Lo que no cabe en la boca*
 
 Hay un nombre que no cabe en la garganta,<br>
 que sube como brasa desde el centro<br>
@@ -52,7 +52,7 @@ que pasa y deja un rastro de lo digno.<br>
 
 ## II. La gravedad del centro
 
-*Actitud lírica: meditativa · Temple de ánimo: sereno y profundo*
+*El peso que sostiene*
 
 Como el agua que desciende sin esfuerzo<br>
 hacia el lugar más hondo de la tierra,<br>
@@ -78,7 +78,7 @@ con la sed más antigua que tenemos.<br>
 
 ## III. Ungüento derramado
 
-*Actitud lírica: canción · Temple de ánimo: vulnerable y luminoso*
+*Lo que se rompe para darse*
 
 Ella rompió el frasco sin calcular el gasto,<br>
 dejó que el nardo perfumara el suelo,<br>
