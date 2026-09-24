@@ -58,7 +58,7 @@ export default defineConfig({
       entryLimit: 10000,
       // las URLs antiguas solo redirigen: no deben figurar en el sitemap
       filter: (page) =>
-        !/\/poemas\/(poemas-de-fortaleza|poems-for-mothers-day|poemas-cristianos-esperanza)\//.test(page),
+        !/\/poemas\/(poemas-de-fortaleza|poems-for-mothers-day|poemas-cristianos-esperanza|poemas-cristianos-for-jovenes)\//.test(page),
     })
   ],
   trailingSlash: 'always',
