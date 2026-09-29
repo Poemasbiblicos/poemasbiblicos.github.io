@@ -1,0 +1,65 @@
+---
+import fs from "node:fs";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { dibujos } from "../../data/dibujos.js";
+
+// Solo se muestran los dibujos ya montados (dibujos/montar.mjs genera los .webp)
+const listos = dibujos.filter((d) => fs.existsSync(`public/dibujos/${d.slug}.webp`));
+const packListo = fs.existsSync("public/dibujos/pdf/dibujos-biblicos-para-colorear.pdf");
+
+const title = "Dibujos Bíblicos para Colorear | Gratis para imprimir con versículo";
+const description =
+  "Dibujos bíblicos para colorear gratis: el arca de Noé, David y Goliat, el buen pastor y más escenas de la Biblia, cada una con su versículo para imprimir en PDF.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-kicker">Para niños</p>
+        <h1 class="section-title">Dibujos bíblicos para colorear</h1>
+        <p class="section-description">
+          Dibujos cristianos para colorear e imprimir gratis. Cada escena de la Biblia lleva su versículo
+          en letras huecas, para colorear también la Palabra. Pensados para casa, la escuela dominical o la catequesis.
+        </p>
+        {packListo && (
+          <p>
+            <a class="btn-primary" href="/dibujos/pdf/dibujos-biblicos-para-colorear.pdf" download>
+              Descargar los {listos.length} dibujos en PDF
+            </a>
+          </p>
+        )}
+      </div>
+
+      <div class="dibujos-grid">
+        {listos.map((d) => (
+          <figure class="dibujo-card">
+            <img src={`/dibujos/${d.slug}.webp`} alt={`${d.titulo} para colorear, con el versículo ${d.cita}`}
+              width="900" height="1165" loading="lazy" decoding="async" />
+            <figcaption>
+              <h2>{d.titulo}</h2>
+              <p class="dibujo-verso">«{d.verso}» <span>{d.cita}</span></p>
+              <a href={`/dibujos/pdf/${d.slug}.pdf`} download>Imprimir este dibujo (PDF)</a>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+
+      <p class="section-description">
+        ¿Te gustan? Encontrarás más recursos para los pequeños en nuestros
+        <a href="/poemas/poemas-para-ninos/">poemas cristianos para niños</a>.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .dibujos-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 28px; margin: 32px 0; }
+  .dibujo-card { margin: 0; background: #fff; border: 1px solid #eadfcb; border-radius: 16px; overflow: hidden; }
+  .dibujo-card img { display: block; width: 100%; height: auto; }
+  .dibujo-card figcaption { padding: 16px 18px 20px; }
+  .dibujo-card h2 { font-size: 1.15rem; margin: 0 0 6px; }
+  .dibujo-verso { font-style: italic; margin: 0 0 12px; }
+  .dibujo-verso span { display: block; font-style: normal; font-size: .85rem; opacity: .75; }
+  .btn-primary { display: inline-block; padding: 12px 22px; border-radius: 999px; background: #b08445; color: #fff; text-decoration: none; font-weight: 600; }
+</style>
