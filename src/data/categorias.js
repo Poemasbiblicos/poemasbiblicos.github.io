@@ -33,14 +33,4 @@ export const contenidoCategorias = {
       },
     ],
   },
-  "poemas-para-ninos": {
-    secciones: [
-      {
-        titulo: "Dibujos bíblicos para colorear",
-        parrafos: [
-          "Además de poemas, tenemos <a href=\"/dibujos-para-colorear/\">dibujos bíblicos para colorear</a> gratis: el arca de Noé, Jonás, el buen pastor y otras escenas, cada una con su versículo para imprimir en casa o en la escuela dominical.",
-        ],
-      },
-    ],
-  },
 };

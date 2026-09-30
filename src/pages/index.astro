@@ -5,6 +5,7 @@ import Hero from "../components/Hero.astro";
 import CategoryGrid from "../components/CategoryGrid.astro";
 import FeaturedArticles from "../components/FeaturedArticles.astro";
 import LatestPoems from "../components/LatestPoems.astro";
+import DibujosPromo from "../components/DibujosPromo.astro";
 
 const pageTitle =
   "Poemas Bíblicos | Poemas Cristianos la mayor colección de poemas bíblicos y cristianos sobre fe, amor, esperanza, familia, jóvenes, reflexión y muchos más.";
@@ -65,18 +66,7 @@ const pageDescription =
 
   <LatestPoems />
 
-  <section class="section" aria-labelledby="dibujos-home-title">
-    <div class="container">
-      <div class="section-heading">
-        <p class="section-kicker">Para los más pequeños</p>
-        <h2 id="dibujos-home-title" class="section-title">Dibujos bíblicos para colorear</h2>
-        <p class="section-description">
-          El arca de Noé, David y Goliat, el buen pastor y más escenas de la Biblia, cada una con su versículo.
-          <a href="/dibujos-para-colorear/">Descárgalos gratis para imprimir</a>.
-        </p>
-      </div>
-    </div>
-  </section>
+  <DibujosPromo />
 
   <section
     class="section pillar-intro"

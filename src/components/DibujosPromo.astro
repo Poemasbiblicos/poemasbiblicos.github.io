@@ -1,0 +1,34 @@
+---
+// Bloque de llamada a los dibujos para colorear: miniaturas + boton visible.
+import { dibujos } from "../data/dibujos.js";
+const { titulo = "Dibujos bíblicos para colorear", kicker = "Para los más pequeños" } = Astro.props;
+const muestra = dibujos.slice(0, 4);
+---
+
+<section class="section dibujos-promo" aria-labelledby="dibujos-promo-title">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-kicker">{kicker}</p>
+      <h2 id="dibujos-promo-title" class="section-title">{titulo}</h2>
+      <p class="section-description">
+        El arca de Noé, David y Goliat, el buen pastor y más escenas de la Biblia, cada una con su versículo. Gratis para imprimir.
+      </p>
+    </div>
+    <a class="dibujos-promo-grid" href="/dibujos-para-colorear/" aria-label="Ver los dibujos bíblicos para colorear">
+      {muestra.map((d) => (
+        <img src={`/dibujos/${d.slug}.webp`} alt={`${d.titulo} para colorear`} width="900" height="1165" loading="lazy" decoding="async" />
+      ))}
+    </a>
+    <p class="dibujos-promo-cta">
+      <a class="button-primary" href="/dibujos-para-colorear/">Ver y descargar los dibujos</a>
+    </p>
+  </div>
+</section>
+
+<style>
+  .dibujos-promo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 900px; margin: 24px auto 0; }
+  .dibujos-promo-grid img { width: 100%; height: auto; border: 1px solid #eadfcb; border-radius: 12px; background: #fff; transition: transform .2s; }
+  .dibujos-promo-grid:hover img { transform: translateY(-3px); }
+  .dibujos-promo-cta { text-align: center; margin-top: 24px; }
+  @media (max-width: 640px) { .dibujos-promo-grid { grid-template-columns: repeat(2, 1fr); } }
+</style>

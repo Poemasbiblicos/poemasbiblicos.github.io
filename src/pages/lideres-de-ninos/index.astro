@@ -1,0 +1,63 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import DibujosPromo from "../../components/DibujosPromo.astro";
+
+const poemasNinos = (await getCollection("poemas"))
+  .filter((p) => p.data.category === "Poemas para Niños")
+  .sort((a, b) => +new Date(b.data.pubDate) - +new Date(a.data.pubDate));
+
+const title = "Recursos para Líderes de Niños | Escuela dominical cristiana";
+const description =
+  "Recursos cristianos gratis para líderes de niños y maestros de escuela dominical: dibujos bíblicos para colorear con versículo, poemas para niños y cómo usarlos en clase.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-kicker">Escuela dominical</p>
+        <h1 class="section-title">Recursos para líderes de niños</h1>
+        <p class="section-description">
+          Material gratuito para maestros de escuela dominical, líderes del ministerio infantil y padres que enseñan la Biblia en casa.
+          Todo se puede imprimir y usar en clase.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <DibujosPromo kicker="Recurso 1" titulo="Dibujos bíblicos para colorear" />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-kicker">Recurso 2</p>
+        <h2 class="section-title">Poemas cristianos para niños</h2>
+        <p class="section-description">Versos sencillos para leer en voz alta, memorizar o recitar en una actividad especial.</p>
+      </div>
+      <div class="category-poems-list">
+        {poemasNinos.map((p) => (
+          <a href={`/poemas/${p.id.split("/").pop()}/`} class="poem-preview-card">
+            <div class="poem-preview-content">
+              <h3>{p.data.title}</h3>
+              <p>{p.data.description}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section pillar-intro">
+    <div class="container">
+      <div class="pillar-copy">
+        <h2>Cómo usar estos recursos en la clase</h2>
+        <p><strong>1. Cuenta la historia.</strong> Antes de repartir el dibujo, narra el pasaje con tus palabras y en pocos minutos. Pregunta qué personajes aparecen.</p>
+        <p><strong>2. Lee el versículo juntos.</strong> Cada dibujo trae su versículo en letras huecas. Léanlo en voz alta dos o tres veces antes de colorear.</p>
+        <p><strong>3. Colorear mientras conversan.</strong> Es el mejor momento para preguntas sencillas: ¿qué hizo Dios en esta historia?, ¿en qué se parece a nosotros?</p>
+        <p><strong>4. Memorizar.</strong> Al terminar, que cada niño intente decir el versículo sin mirar. Quien lo logre puede llevarse el dibujo a casa para enseñárselo a su familia.</p>
+        <p><strong>5. Cerrar con un poema.</strong> Termina la clase leyendo uno de los poemas para niños, o pide a un voluntario que lo recite.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
