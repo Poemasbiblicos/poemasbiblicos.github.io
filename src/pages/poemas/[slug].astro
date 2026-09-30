@@ -149,6 +149,24 @@ const categorySlug = poema.data.category
         <Content />
       </section>
 
+      <!-- En movil la imagen va despues del poema, para que el poema se vea al entrar -->
+      <img
+        class="poema-image poema-image-final"
+        src={poema.data.heroImage}
+        alt={poema.data.title}
+        loading="lazy"
+        decoding="async"
+      />
+
+      <aside class="compartir" aria-label="Compartir este poema">
+        <p class="compartir-titulo">¿Te gustó? Compártelo con alguien especial</p>
+        <div class="compartir-botones">
+          <a class="compartir-btn compartir-whatsapp" data-share="whatsapp" href="#" rel="noopener" target="_blank">WhatsApp</a>
+          <a class="compartir-btn compartir-facebook" data-share="facebook" href="#" rel="noopener" target="_blank">Facebook</a>
+          <button class="compartir-btn compartir-copiar" type="button" data-share="copiar">Copiar enlace</button>
+        </div>
+      </aside>
+
       {relatedPoemas.length > 0 && (
         <section class="related-poemas" aria-labelledby="related-poemas-title">
           <div class="related-poemas-heading">
@@ -194,4 +212,41 @@ const categorySlug = poema.data.category
       )}
     </div>
   </article>
+
+  <script>
+    const NL = "\n";
+    const url = location.href.split("#")[0];
+    const titulo = document.querySelector("h1")?.textContent?.trim() || document.title;
+    const wa = (texto) => "https://wa.me/?text=" + encodeURIComponent(texto);
+
+    // Barra general
+    document.querySelectorAll("[data-share]").forEach((el) => {
+      const tipo = el.getAttribute("data-share");
+      if (tipo === "whatsapp") el.setAttribute("href", wa(titulo + NL + url));
+      if (tipo === "facebook") el.setAttribute("href", "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(url));
+      if (tipo === "copiar") el.addEventListener("click", async () => {
+        try { await navigator.clipboard.writeText(url); el.textContent = "¡Enlace copiado!"; }
+        catch { prompt("Copia el enlace:", url); }
+      });
+    });
+
+    // Un boton bajo cada poema para enviar ese poema concreto
+    document.querySelectorAll(".poema-cuadro").forEach((cuadro) => {
+      let anterior = cuadro.previousElementSibling;
+      let subtitulo = "";
+      while (anterior && anterior.tagName !== "H2") {
+        if (!subtitulo && anterior.querySelector("em")) subtitulo = anterior.textContent.trim();
+        anterior = anterior.previousElementSibling;
+      }
+      const versos = [...cuadro.querySelectorAll("p")].map((p) => p.innerText.trim()).join(NL + NL);
+      const texto = (subtitulo ? subtitulo + NL + NL : "") + versos + NL + NL + "Lee el poema completo: " + url;
+      const a = document.createElement("a");
+      a.className = "compartir-btn compartir-whatsapp compartir-poema";
+      a.href = wa(texto);
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.textContent = "Enviar este poema por WhatsApp";
+      cuadro.insertAdjacentElement("afterend", a);
+    });
+  </script>
 </BaseLayout>
