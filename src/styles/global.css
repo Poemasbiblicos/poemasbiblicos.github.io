@@ -1890,3 +1890,18 @@ color:#5b5142;
   .poema-header { margin-bottom: 0; padding-bottom: 0; }
   .poema-content h2 { margin-top: 22px; }
 }
+
+
+/* Portada movil: categorias compactas (solo icono y nombre) y panel de enlaces mas ligero */
+@media (max-width: 700px) {
+  .category-grid { gap: 10px; margin-top: 1.6rem; }
+  .category-card { min-height: 0; padding: 14px 12px; gap: 8px; align-content: start; }
+  .category-card .category-count,
+  .category-card p { display: none; }
+  .category-icon, .category-icon svg { width: 30px; min-height: 30px; }
+  .category-card h3 { font-size: 1.12rem; line-height: 1.15; }
+  .category-seo-panel { margin-top: 18px; padding: 18px; }
+  .category-seo-panel h2 { font-size: 1.05rem; margin-bottom: 10px; }
+  .category-seo-panel ul { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+  .category-seo-panel a { font-size: .88rem; }
+}
