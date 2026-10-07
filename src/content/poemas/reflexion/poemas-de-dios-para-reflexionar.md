@@ -29,8 +29,8 @@ los planetas giran como una voz<br>
 que sólo Él pronuncia desde el alma.<br>
 
 Y sin embargo baja hasta la calma<br>
-de tu angustia nocturna: escucha dos<br>
-latidos tuyos y los hace suyos,<br>
+de tu angustia nocturna, y a tu lado<br>
+escucha tu latido desvelado<br>
 y en ese abismo planta una flor de palma.<br>
 
 Grande en los cielos que no tienen techo,<br>

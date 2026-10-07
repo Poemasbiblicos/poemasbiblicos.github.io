@@ -35,8 +35,8 @@ y sabe pronunciar tu nombre entero.<br>
 
 Descansa, que la fe no es estar fuerte:<br>
 es dejarse cargar cuando no puedes,<br>
-y confiar en que la mano que sostiene<br>
-no se cansa aunque tú ya estés cansado.<br>
+es saber que la mano que sostiene<br>
+no se cansa por mucho que le pese.<br>
 
 ---
 

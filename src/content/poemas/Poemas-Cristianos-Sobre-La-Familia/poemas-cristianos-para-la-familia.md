@@ -41,9 +41,9 @@ es vid que al tronco eterno pertenece.<br>
 
 Como el cordón de tres dobleces que no<br>
 se rompe fácilmente —dice el sabio—<br>
-así el amor que tiene a Dios por nabo<br>
+así el amor que tiene a Dios por lazo<br>
 
-resiste el viento, el tiempo y el reproche.<br>
+resiste el viento, el tiempo y el agravio.<br>
 Permanezcan juntos, familia mía:<br>
 la unidad es ya la profecía.<br>
 

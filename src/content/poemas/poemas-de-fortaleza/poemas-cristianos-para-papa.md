@@ -30,13 +30,13 @@ y volvías cuando ya no había nadie.<br>
 
 No aprendí la fe en un libro abierto:<br>
 la aprendí viendo tu espalda en el trabajo,<br>
-tu manera callada de creer<br>
-que Dios paga lo justo, aunque sea tarde.<br>
+tu manera callada de ir creyendo<br>
+que Dios da lo justo al que está cansado.<br>
 
 Hoy que puedo nombrarlo, te lo digo:<br>
 gracias por el silencio que sostuvo<br>
-la casa donde crecimos sin saber<br>
-cuánto costaba el techo que teníamos.<br>
+la casa donde crecimos sin testigo<br>
+de lo que te costaba un techo seguro.<br>
 
 ---
 

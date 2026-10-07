@@ -29,17 +29,17 @@ y otra más honda, para el que nombra<br>
 al Señor entre cucharas y pareces.<br>
 
 El hogar cristiano es uno de esos<br>
-altares que no tienen piedra ni penumbra<br>
-formal: es la cena bajo la lumbre<br>
-de una oración que une sus procesos.<br>
+altares sin piedra, sin incienso ni alfombra:<br>
+es la cena compartida, son los rezos<br>
+de una familia que a Dios lo nombra.<br>
 
 Aquí los hijos aprenden que dar gracias<br>
 no es gesto de protocolo sino idioma<br>
-del alma que reconoce Sus gramas.<br>
+del alma que agradece sus migajas.<br>
 
 En esta mesa Dios también se asoma:<br>
 bendice el pan, el vino y las fatigas,<br>
-y hace del hogar Su nueva aroma.<br>
+y hace del hogar Su nuevo aroma.<br>
 
 ---
 

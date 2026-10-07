@@ -28,7 +28,7 @@ de mayorías: deja la manada<br>
 por la oveja perdida y extraviada<br>
 en el barranco del invierno y frío.<br>
 
-Es el amor que cruza el escuadrío<br>
+Es el amor que cruza el desafío<br>
 de lo racional, la decisión osada<br>
 de abandonar la pradera cercada<br>
 por el uno que llora su extravío.<br>

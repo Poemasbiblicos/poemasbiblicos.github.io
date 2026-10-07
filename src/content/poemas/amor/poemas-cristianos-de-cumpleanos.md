@@ -31,7 +31,7 @@ sin cobrarte ni el aire ni el asombro.<br>
 Trescientos sesenta y cinco amaneceres<br>
 sostenidos por Alguien silencioso,<br>
 que abrió tus ojos cada madrugada<br>
-sin pedirte que hicieras el esfuerzo.<br>
+y te puso la luz sobre los hombros.<br>
 
 Por eso hoy no celebro solamente<br>
 que llegaras: celebro que hubo Otro<br>

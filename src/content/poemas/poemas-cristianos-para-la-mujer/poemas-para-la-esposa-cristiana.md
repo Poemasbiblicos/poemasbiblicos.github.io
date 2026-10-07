@@ -29,13 +29,13 @@ la que convierte en luz cualquier sombra<br>
 y en esperanza lo que duele ya.<br>
 
 Su fe no necesita grandes gestos,<br>
-vive en el detalle que nadie registra,<br>
+vive en el detalle que nadie mira,<br>
 en los silencios largos y modestos<br>
-que sostienen la familia como listra.<br>
+que sostienen la casa como vigas.<br>
 
 Hay un perfume en sus manos que trabajan,<br>
 mezcla de oración y de cuidado,<br>
-de amor que las palabras no embarajan<br>
+de un amor que las palabras no abarcan<br>
 porque es más hondo que cualquier dictado.<br>
 
 Mujer de Proverbios treinta y uno,<br>

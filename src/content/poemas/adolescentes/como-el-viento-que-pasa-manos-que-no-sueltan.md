@@ -27,10 +27,10 @@ que corre entre los dedos sin que nadie lo llame,<br>
 un destello de luz entre dos oscuridades,<br>
 un instante que brilla antes de que se apague.<br>
 
-Los días de la infancia se perdieron tan rápido,<br>
-como el humo que sube y se disuelve en el aire;<br>
+Los días de la infancia se fueron en un soplo,<br>
+como el humo que sube y en el aire se apaga;<br>
 lo que hoy tienes en mano mañana será polvo,<br>
-lo que hoy llenas de risa mañana puede irse.<br>
+lo que hoy llenas de risa se vuelve una nostalgia.<br>
 
 Qué frágil es el hombre, qué pequeña su historia,<br>
 qué breve el tiempo dado para andar por la tierra;<br>

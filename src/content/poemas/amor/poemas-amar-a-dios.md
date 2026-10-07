@@ -42,9 +42,9 @@ Amarte es comprender que soy el polvo<br>
 que amasaste con agua de tu aliento,<br>
 que mi sed no es defecto sino signo:<br>
 
-el mismo vacío es el que absuelvo<br>
-cuando te busco en el íntimo viento<br>
-que pasa y deja un rastro de lo digno.<br>
+signo de que me hiciste para el todo,<br>
+y que este vacío que en el pecho siento<br>
+es el molde exacto de tu nombre digno.<br>
 
 *— Salmos 63:1 · Génesis 2:7*
 

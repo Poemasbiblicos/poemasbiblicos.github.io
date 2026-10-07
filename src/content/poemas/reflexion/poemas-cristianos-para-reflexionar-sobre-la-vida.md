@@ -35,11 +35,11 @@ cada mañana es llama que se toca.<br>
 
 Camina, pues, con pasos que mediten<br>
 el peso breve de los días dados,<br>
-que el Señor cuenta lo que tus ojos viten.<br>
+que el Señor cuenta lo que tus ojos viven.<br>
 
 No busques huellas en los años idos:<br>
-haz del presente espacio consagrado,<br>
-que el cielo escucha hasta los silencios.<br>
+haz del presente un tiempo consagrado,<br>
+que el cielo escucha incluso los latidos.<br>
 
 ---
 

@@ -36,7 +36,7 @@ de todo lo que solos fuera indigno.<br>
 La Biblia es el plano del hogar más hondo,<br>
 sus páginas describen cada cuarto:<br>
 el perdón en el centro, el amor en el fondo,<br>
-y la fe como techo que no parte.<br>
+y la fe como techo resguardando.<br>
 
 Familia que en su Palabra se edifica<br>
 no teme al viento ni a la lluvia larga,<br>

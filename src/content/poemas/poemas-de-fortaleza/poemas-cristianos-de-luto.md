@@ -31,12 +31,12 @@ el rato que haga falta, sin apuro.<br>
 El dolor no se arregla con razones,<br>
 se acompaña, se aguanta, se sostiene;<br>
 y hay un Dios que no explica lo ocurrido<br>
-pero llora también junto al sepulcro.<br>
+pero llora a tu lado y no se vuelve.<br>
 
 Llora, que Jesús lloró primero<br>
-frente a la tumba de un amigo suyo;<br>
-no es falta de fe la lágrima que cae,<br>
-es la forma en que el amor sigue diciendo.<br>
+frente a la tumba de su amigo amado;<br>
+no es falta de fe la lágrima que cae:<br>
+es el amor que sigue de tu lado.<br>
 
 ---
 

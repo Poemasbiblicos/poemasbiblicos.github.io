@@ -29,14 +29,14 @@ tejía sin apuro una cadena<br>
 de oraciones que hoy te está guardando.<br>
 
 Su Biblia tiene el lomo despegado<br>
-y los márgenes llenos de anotaciones:<br>
+y los márgenes llenos de oraciones:<br>
 un mapa de las noches que ha velado<br>
-y el registro exacto de sus ruegos.<br>
+y el nombre de sus nietos en renglones.<br>
 
 Si algo bueno sostiene todavía<br>
 la casa donde todos aprendimos,<br>
-es la raíz que ella puso abajo<br>
-mucho antes de que hubiera edificio.<br>
+es la raíz que ella sembró en sus días<br>
+cuando aún no éramos ni un rumor de niños.<br>
 
 ---
 

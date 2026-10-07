@@ -29,9 +29,9 @@ etiquetas pegadas en el espejo<br>
 que tapan lo que Dios en ti conoces.<br>
 
 Pero hay un nombre anterior a tus voces,<br>
-grabado antes del primer bocejo<br>
-del mundo: un nombre sin eco ni reflejo<br>
-que sólo Él pronuncia en ciertos goces.<br>
+grabado antes del primer reflejo<br>
+del mundo: un nombre que no queda viejo<br>
+y que sólo Él pronuncia, y tú lo oyes.<br>
 
 Eres imagen antes que algoritmo,<br>
 llamado antes que título o trabajo,<br>

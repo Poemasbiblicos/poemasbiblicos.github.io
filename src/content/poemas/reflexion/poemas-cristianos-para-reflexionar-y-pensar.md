@@ -29,8 +29,8 @@ cuando el pecho se aquieta bajo la penumbra y la sombra<br>
 lo invisible alimenta a los que son creyentes.<br>
 
 No se compra en mercados ni en corrientes<br>
-de palabras que el mundo siempre escombra:<br>
-es el pan que el Señor parte en la escombra<br>
+de palabras que el mundo desparrama:<br>
+es el pan que el Señor parte en la llama<br>
 del silencio, entre manos transparentes.<br>
 
 Piensa, pues, cuántas veces fuiste saciado<br>

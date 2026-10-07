@@ -30,8 +30,8 @@ y nadie más que tú la iba cargando.<br>
 
 Perdonar no es decir que no dolió,<br>
 ni borrar la memoria de lo hecho:<br>
-es soltar la sentencia que dictabas<br>
-y entregarle el proceso a un juez más justo.<br>
+es soltar la sentencia de tu pecho<br>
+y entregarla al Señor que ya pagó.<br>
 
 El rencor es un veneno que se bebe<br>
 esperando que muera el envenenado;<br>

@@ -29,14 +29,14 @@ ya la madre lo cubrió con ese asombre<br>
 de quien sabe que un hijo es un anhelo.<br>
 
 Bendecir a los hijos es el rito<br>
-más antiguo que guarda el pueblo elegido,<br>
-Isaac lo recibió, Jacob lo escrito,<br>
-y el amor de Dios en ello contenido.<br>
+más antiguo que guarda el pueblo elegido:<br>
+Isaac lo pronunció sobre su hijo<br>
+y Jacob lo dejó como un legado vivo.<br>
 
 Que sobre tu cabeza caiga el rocío<br>
 de la gracia que el Señor reparte al alba,<br>
 que tu vida sea un río amplio y frío<br>
-que refresca al que llega y lo recalma.<br>
+que refresca al que llega y lo levanta.<br>
 
 Hijo mío, llevas en la frente<br>
 la marca de una oración que te precede,<br>

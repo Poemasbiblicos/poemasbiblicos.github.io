@@ -36,7 +36,7 @@ se mide en el enero más adverso.<br>
 Que su casa se funde sobre roca<br>
 y no sobre la arena del deseo,<br>
 para que cuando llegue la tormenta<br>
-—y llegará— los halle bien cimentados.<br>
+—y llegará— la encuentre en su cimiento.<br>
 
 ---
 

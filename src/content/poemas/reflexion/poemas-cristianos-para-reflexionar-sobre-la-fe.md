@@ -35,11 +35,11 @@ de Dios lo conducía paso a paso.<br>
 
 Reflexiona: ¿cuántas veces esperaste<br>
 ver el puente completo antes de andar,<br>
-y en esa espera todo lo perdiste?<br>
+y en esa espera el río no cruzaste?<br>
 
 La fe construye el arco al caminar:<br>
 el primer tablón aparece si pisaste<br>
-el vacío confiando en Su susurrar.<br>
+el vacío confiando en Su llamar.<br>
 
 ---
 

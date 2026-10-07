@@ -33,10 +33,10 @@ con horas que se cuelgan sin descanso;<br>
 pero el Dios que contó cada cabello<br>
 no te mide por muros ni por rastros.<br>
 
-Él conoce la grieta por la cual<br>
-se te escapa la fuerza, y en el mismo<br>
-lugar derrama su aceite callado<br>
-como quien cura sin tocar el daño.<br>
+Él conoce la grieta por donde escapa<br>
+tu fuerza cuando el día se hace largo,<br>
+y en ese mismo sitio, sin palabra,<br>
+derrama su aceite y te cura el daño.<br>
 
 Levántate: no porque seas fuerte,<br>
 sino porque Alguien ya te ha levantado<br>

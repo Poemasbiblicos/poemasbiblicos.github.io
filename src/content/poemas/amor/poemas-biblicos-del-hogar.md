@@ -29,9 +29,9 @@ cada una con su propio ritmo dado<br>
 pero unidas en la misma gran blasfema.<br>
 
 El matrimonio es la metáfora más honda<br>
-que Dios usó para hablar de su amor propio,<br>
-como Cristo a su Iglesia corresponde,<br>
-así el esposo ama lo que es su envío.<br>
+que Dios usó para nombrar su alianza:<br>
+como Cristo a su Iglesia se entrega toda,<br>
+así el esposo ama sin medir la balanza.<br>
 
 Hay un calor que sabe a madera vieja<br>
 y a aceite vertido en la cabeza,<br>

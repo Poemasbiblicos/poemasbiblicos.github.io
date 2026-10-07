@@ -15,7 +15,9 @@ const path = require("path");
 const { ORNAMENTOS, CREMA, CREMA_2, estiloDe } = require("./estilos.cjs");
 
 const W = 1000, H = 1500;
-const SALIDA = "pinterest/pines";
+const SALIDA = process.env.PIN_OUT || "pinterest/pines";
+// versos propios para un pin concreto (cuando la estrofa de la web no cabe en 4 versos)
+const OVR = fs.existsSync("pinterest/versos-pin.json") ? JSON.parse(fs.readFileSync("pinterest/versos-pin.json", "utf8")) : {};
 const SANS = "Segoe UI, Arial, sans-serif";
 const DOMINIO = "poemasbiblicos.github.io";
 
@@ -159,7 +161,7 @@ const RECORTES = ["attention", "centre", "top", "entropy"];
   // la imagen propia de la categoria se usa UNA vez por tablero; el resto rota
   // por todo el banco, para que dentro de un tablero no se repita el fondo
   const usadaPropia = new Set();
-  let n = 0, k = 0;
+  let n = 0, k = +(process.env.PIN_K || 0);
 
   // Nombres de carpeta "NN - Categoria (N pines)": el CSV del calendario los usa.
   const cuenta = {};
@@ -211,7 +213,7 @@ const RECORTES = ["attention", "centre", "top", "entropy"];
 
       await sharp(base)
         .composite([{ input: svgPin({
-          titulo: p.h1, versos: elegidas[i].versos.slice(0, 4),
+          titulo: p.h1, versos: OVR[`${slug}-${i + 1}.png`] || elegidas[i].versos.slice(0, 4),
           subtitulo: elegidas[i].subtitulo, velo, estilo }) }])
         .png({ quality: 90 }).toFile(out);
       n++;

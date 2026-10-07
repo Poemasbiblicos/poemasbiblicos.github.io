@@ -28,10 +28,10 @@ si merece el agua que va a recibir;<br>
 cae porque el cielo decide existir<br>
 sobre todo lo árido que seca.<br>
 
-Así la gracia: silenciosa y desnuda llega,<br>
-no premia virtud ni castiga el vivir,<br>
-sólo toca la herida para al fin la uncir<br>
-con un amor que al corazón anega.<br>
+Así llega la gracia, silenciosa,<br>
+sin premiar la virtud ni el sacrificio;<br>
+solo toca la herida dolorosa<br>
+y la unge de amor desde el principio.<br>
 
 ---
 

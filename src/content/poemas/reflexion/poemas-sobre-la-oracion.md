@@ -28,10 +28,10 @@ que no cabe en la fórmula aprendida;<br>
 sube sin consonantes, como el humo,<br>
 y llega antes que el ruego se decida.<br>
 
-Dios entiende el gemido sin sintaxis,<br>
-la sílaba partida a la mitad,<br>
-el silencio espeso del que ya no puede<br>
-ni encontrar el principio de la frase.<br>
+Dios entiende el gemido sin palabras,<br>
+la sílaba partida en la garganta,<br>
+el silencio del alma que no aguanta<br>
+y no sabe por dónde empezar nada.<br>
 
 No te apures buscando las palabras:<br>
 Él conoce el idioma que te falta,<br>
